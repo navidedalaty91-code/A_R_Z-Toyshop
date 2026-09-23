@@ -5,7 +5,7 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-35.jpg",
         description: "پروازی هیجان‌انگیز و سرگرم‌کننده ✈️",
         link: "../../products/product7/",
-        category: ["remote","action"]
+        category: ["remote", "action"]
     },
 
     Rechargeable_Bluetooth_Boxing_Machine: {
@@ -14,7 +14,7 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-33.jpg",
         description: "مبارزه هیجان‌انگیز با بلوتوث 🥊",
         link: "../../products/product5/",
-        category: ["action","digital"]
+        category: ["action", "digital"]
     },
 
     Dual_function_ball_water_gun: {
@@ -41,7 +41,7 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-28.jpg",
         description: "گیم‌پد شارژی با ۵۰۰ بازی متنوع 🎮",
         link: "../../products/product/",
-        category: ["console","digital"]
+        category: ["console", "digital"]
     },
 
     Hair_braiding_set: {
@@ -74,9 +74,17 @@ const products = {
         name: "اتوبوس اموزشی برند هالی تویز",
         price: "۶,۸۰۰,۰۰۰ تومان",
         image: "../../images/Holly_Toys_educational_bus.jpg",
-        description:"اموزش حروف و اعداد انگلیسی 🚍",
+        description: "اموزش حروف و اعداد انگلیسی 🚍",
         link: "../../products/اتوبوس_برند_هالی_تویز_اموزشی/",
-        category: ["educational","digital"]
+        category: ["educational", "digital"]
+    },
+    Hulie_Toys_brand_duck: {
+        name: "اردک برند هالی تویز",
+        price: "۳,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Hulie_Toys_brand_duck.jpg",
+        description:"اردک موزیکال؛ شادیِ کودکانه 🐥",
+        link: "../../products/اردک_برند_هالی_تویز/",
+        category: ["educational", "digital"]
     }
 };
 

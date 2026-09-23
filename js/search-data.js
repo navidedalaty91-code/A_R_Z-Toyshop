@@ -58,6 +58,12 @@ const searchProducts = [
         name: "اتوبوس اموزشی برند هالی تویز",
         price: "۶,۸۰۰,۰۰۰ تومان",
         image: "images/Holly_Toys_educational_bus.jpg",
-        link: "products/اتوبوس_برند_هالی_تویز_اموزشی/",
+        link: "products/اتوبوس_برند_هالی_تویز_اموزشی/"
+    },
+    {
+        name: "اردک برند هالی تویز",
+        price: "۳,۵۰۰,۰۰۰ تومان",
+        image: "images/Hulie_Toys_brand_duck.jpg",
+        link: "products/اردک_برند_هالی_تویز/"
     }
 ];
