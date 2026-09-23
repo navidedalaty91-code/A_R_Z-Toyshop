@@ -73,7 +73,7 @@ const products = {
     Holly_Toys_educational_bus: {
         name: "اتوبوس اموزشی برند هالی تویز",
         price: "۶,۸۰۰,۰۰۰ تومان",
-        image: "../../images/اتوبوس برند هالی تویز اموزشی.jpg",
+        image: "../../images/Holly_Toys_educational_bus.jpg",
         description:"اموزش حروف و اعداد انگلیسی 🚍",
         link: "../../products/اتوبوس_برند_هالی_تویز_اموزشی/",
         category: ["educational","digital"]
