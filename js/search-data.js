@@ -65,5 +65,11 @@ const searchProducts = [
         price: "۲,۸۰۰,۰۰۰ تومان",
         image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
         link: "../../products/رباط_بازلایتر_موزیکال/",
+    },
+    {
+        name: "ست بوکسینگ دیجیتال شارژی",
+        price: "۸,۰۰۰,۰۰۰ تومان",
+        image: "images/Rechargeable_Digital_6_Piece_Boxing_Set.jpg",
+        link: "products/ست_بوکسینگ_دیجیتال_شارژی/",
     }
 ];

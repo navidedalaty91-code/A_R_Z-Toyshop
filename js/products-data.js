@@ -96,12 +96,21 @@ const products = {
         category: ["educational", "digital"],
         Inventory: "✓ موجود در انبار"
     },
-        Musical_Buzz_Lightyear_Robot: {
+    Musical_Buzz_Lightyear_Robot: {
         name: "رباط بازلایتر موزیکال",
         price: "۲,۸۰۰,۰۰۰ تومان",
         image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
         description: "به سوی بی‌نهایت و فراتر از آن! 🤖",
         link: "../../products/رباط_بازلایتر_موزیکال/",
+        category: ["action", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
+    Rechargeable_Digital_6_Piece_Boxing_Set: {
+        name: "ست بوکسینگ دیجیتال شارژی",
+        price: "۸,۰۰۰,۰۰۰ تومان",
+        image: "../../images/Rechargeable_Digital_6_Piece_Boxing_Set.jpg",
+        description: "واکنش نشون بده و لذت ببر! 🥊",
+        link: "../../products/ست_بوکسینگ_دیجیتال_شارژی/",
         category: ["action", "digital"],
         Inventory: "✓ موجود در انبار"
     }
