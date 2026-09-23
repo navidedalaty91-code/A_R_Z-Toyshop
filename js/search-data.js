@@ -53,5 +53,11 @@ const searchProducts = [
         price: "۴,۵۰۰,۰۰۰ تومان",
         image: "images/photo_2026-09-13_22-49-30.jpg",
         link: "products/product6/"
+    },
+{
+        name: "اتوبوس اموزشی برند هالی تویز",
+        price: "۶,۸۰۰,۰۰۰ تومان",
+        image: "../../images/اتوبوس برند هالی تویز اموزشی.jpg",
+        link: "",
     }
 ];
