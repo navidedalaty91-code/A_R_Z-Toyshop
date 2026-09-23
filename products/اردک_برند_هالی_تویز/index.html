@@ -854,6 +854,9 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+                .out-of-stock {
+            color: red;
+        }
     </style>
 </head>
 
@@ -894,7 +897,7 @@
                 <div class="price-box">
                     <p class="second-p-under-price-box product-price"><span class="toman"></span></p>
                 </div>
-                <p class="mojoodi">✓ موجود در انبار</p>
+                <p class="mojoodi product-Inventory"></p>
                 <div class="buy-button-container">
                     <button onclick="myDialog.showModal()" class="button-for-buy">
                         🛒 خرید محصول
@@ -1054,6 +1057,14 @@
         document.querySelector(".product-image").src = product.image;
 
         document.querySelector(".product-image").alt = product.name;
+
+        const inventory = document.querySelector(".product-Inventory");
+
+inventory.textContent = product.Inventory;
+
+if (product.Inventory !== "✓ موجود در انبار") {
+    inventory.classList.add("out-of-stock");
+    }
     </script>
 </body>
 

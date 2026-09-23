@@ -61,9 +61,9 @@ const searchProducts = [
         link: "products/اتوبوس_برند_هالی_تویز_اموزشی/"
     },
     {
-        name: "اردک برند هالی تویز",
-        price: "۳,۵۰۰,۰۰۰ تومان",
-        image: "images/Hulie_Toys_brand_duck.jpg",
-        link: "products/اردک_برند_هالی_تویز/"
+        name: "رباط بازلایتر موزیکال",
+        price: "۲,۸۰۰,۰۰۰ تومان",
+        image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
+        link: "../../products/رباط_بازلایتر_موزیکال/",
     }
 ];

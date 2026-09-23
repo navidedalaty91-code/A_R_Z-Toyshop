@@ -5,7 +5,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-35.jpg",
         description: "پروازی هیجان‌انگیز و سرگرم‌کننده ✈️",
         link: "../../products/product7/",
-        category: ["remote", "action"]
+        category: ["remote", "action"],
+        Inventory: "✓ موجود در انبار"
     },
 
     Rechargeable_Bluetooth_Boxing_Machine: {
@@ -14,7 +15,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-33.jpg",
         description: "مبارزه هیجان‌انگیز با بلوتوث 🥊",
         link: "../../products/product5/",
-        category: ["action", "digital"]
+        category: ["action", "digital"],
+        Inventory: "✓ موجود در انبار"
     },
 
     Dual_function_ball_water_gun: {
@@ -23,7 +25,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-25.jpg",
         description: "دو بازی در یک تفنگ جذاب 🎯",
         link: "../../products/product4/",
-        category: "action"
+        category: "action",
+        Inventory: "✓ موجود در انبار"
     },
 
     Carpentry_set_with_battery_powered_drill: {
@@ -32,7 +35,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-22.jpg",
         description: "ست ابزار جذاب و سرگرم‌کننده 🔨",
         link: "../../products/product3/",
-        category: "tools"
+        category: "tools",
+        Inventory: "✓ موجود در انبار"
     },
 
     Game_console_with_500_games: {
@@ -41,7 +45,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-28.jpg",
         description: "گیم‌پد شارژی با ۵۰۰ بازی متنوع 🎮",
         link: "../../products/product/",
-        category: ["console", "digital"]
+        category: ["console", "digital"],
+        Inventory: "✓ موجود در انبار"
     },
 
     Hair_braiding_set: {
@@ -50,7 +55,8 @@ const products = {
         image: "../../images/Untitled-1.png",
         description: "ست جذاب برای بافت مو 🎀",
         link: "../../products/product1/",
-        category: "makeup"
+        category: "makeup",
+        Inventory: "✓ موجود در انبار"
     },
 
     Nail_and_Makeup_Set: {
@@ -59,7 +65,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-19.jpg",
         description: "ست جذاب ناخن 💅",
         link: "../../products/product2/",
-        category: "makeup"
+        category: "makeup",
+        Inventory: "✓ موجود در انبار"
     },
 
     Instant_print_camera: {
@@ -68,7 +75,8 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-30.jpg",
         description: "لحظه‌ها را ثبت و چاپ کن 📸",
         link: "../../products/product6/",
-        category: "digital"
+        category: "digital",
+        Inventory: "✓ موجود در انبار"
     },
     Holly_Toys_educational_bus: {
         name: "اتوبوس اموزشی برند هالی تویز",
@@ -76,15 +84,26 @@ const products = {
         image: "../../images/Holly_Toys_educational_bus.jpg",
         description: "اموزش حروف و اعداد انگلیسی 🚍",
         link: "../../products/اتوبوس_برند_هالی_تویز_اموزشی/",
-        category: ["educational", "digital"]
+        category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
     },
     Hulie_Toys_brand_duck: {
         name: "اردک برند هالی تویز",
         price: "۳,۵۰۰,۰۰۰ تومان",
         image: "../../images/Hulie_Toys_brand_duck.jpg",
-        description:"اردک موزیکال؛ شادیِ کودکانه 🐥",
+        description: "اردک موزیکال؛ شادیِ کودکانه 🐥",
         link: "../../products/اردک_برند_هالی_تویز/",
-        category: ["educational", "digital"]
+        category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
+        Musical_Buzz_Lightyear_Robot: {
+        name: "رباط بازلایتر موزیکال",
+        price: "۲,۸۰۰,۰۰۰ تومان",
+        image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
+        description: "به سوی بی‌نهایت و فراتر از آن! 🤖",
+        link: "../../products/رباط_بازلایتر_موزیکال/",
+        category: ["action", "digital"],
+        Inventory: "✓ موجود در انبار"
     }
 };
 
