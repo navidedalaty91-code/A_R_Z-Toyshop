@@ -1,4 +1,13 @@
 const products = {
+    LEGO_Kawasaki_H2R_Motorcycle: {
+        name: "لگو موتور کاوازاکی H2R",
+        price: "۴,۳۰۰,۰۰۰ تومان",
+        image: "../../images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
+        description: "بساز، لذت ببر، افتخار کن ✨!",
+        link: "../../products/لگو_موتور_کاوازاکی_H2R/",
+        category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
     Hola_Toys_Musical_Dog: {
         name: "سگ موزیکال هالی تویز",
         price: "۵,۴۰۰,۰۰۰ تومان",
