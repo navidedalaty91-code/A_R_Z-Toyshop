@@ -1,4 +1,13 @@
 const products = {
+    Pepapic_Family_Set: {
+        name: "شخصیت های پپاپیگ 25 تایی",
+        price: "۳,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Pepapic_Family_Set.jpg",
+        description: "🐷 دنیای پپا رو بساز! 🎀",
+        link: "../../products/شخصیت_های_پپاپیگ/",
+        category: ["educational", "figure"],
+        Inventory: "✓ موجود در انبار"
+    },
     Remote_controlled_airplane: {
         name: "هواپیما کنترلی",
         price: "۳,۲۰۰,۰۰۰ تومان",
@@ -102,7 +111,7 @@ const products = {
         image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
         description: "به سوی بی‌نهایت و فراتر از آن! 🤖",
         link: "../../products/رباط_بازلایتر_موزیکال/",
-        category: ["action", "digital"],
+        category: ["action", "digital","figure"],
         Inventory: "✓ موجود در انبار"
     },
     Rechargeable_Digital_6_Piece_Boxing_Set: {
@@ -113,7 +122,7 @@ const products = {
         link: "../../products/ست_بوکسینگ_دیجیتال_شارژی/",
         category: ["action", "digital"],
         Inventory: "✓ موجود در انبار"
-    }
+    },
 };
 
 export { products };

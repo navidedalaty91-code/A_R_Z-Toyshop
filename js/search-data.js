@@ -71,5 +71,11 @@ const searchProducts = [
         price: "۸,۰۰۰,۰۰۰ تومان",
         image: "images/Rechargeable_Digital_6_Piece_Boxing_Set.jpg",
         link: "products/ست_بوکسینگ_دیجیتال_شارژی/",
-    }
+    },
+    {
+        name: "شخصیت های پپاپیگ 25 تایی",
+        price: "۳,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Pepapic_Family_Set.jpg",
+        link: "../../products/شخصیت_های_پپاپیگ/",
+    },
 ];
