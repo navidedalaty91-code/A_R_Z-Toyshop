@@ -1,4 +1,14 @@
 const products = {
+    
+    Complete_vanity_set: {
+        name: "ست میز ارایشی کامل",
+        price: "۲,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Complete_vanity_set.jpg",
+        description: "کوچولوت، یه آرایشگر حرفه‌ای! 💄",
+        link: "../../products/ست_میز_ارایشی_کامل/",
+        category: "makeup",
+        Inventory: "✓ موجود در انبار"
+    },
     Pepapic_Family_Set: {
         name: "شخصیت های پپاپیگ 25 تایی",
         price: "۳,۵۰۰,۰۰۰ تومان",
@@ -111,7 +121,7 @@ const products = {
         image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
         description: "به سوی بی‌نهایت و فراتر از آن! 🤖",
         link: "../../products/رباط_بازلایتر_موزیکال/",
-        category: ["action", "digital","figure"],
+        category: ["action", "digital", "figure"],
         Inventory: "✓ موجود در انبار"
     },
     Rechargeable_Digital_6_Piece_Boxing_Set: {

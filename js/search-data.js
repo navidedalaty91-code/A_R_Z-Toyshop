@@ -63,8 +63,8 @@ const searchProducts = [
     {
         name: "رباط بازلایتر موزیکال",
         price: "۲,۸۰۰,۰۰۰ تومان",
-        image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
-        link: "../../products/رباط_بازلایتر_موزیکال/",
+        image: "images/Musical_Buzz_Lightyear_Robot.jpg",
+        link: "products/رباط_بازلایتر_موزیکال/",
     },
     {
         name: "ست بوکسینگ دیجیتال شارژی",
@@ -75,7 +75,13 @@ const searchProducts = [
     {
         name: "شخصیت های پپاپیگ 25 تایی",
         price: "۳,۵۰۰,۰۰۰ تومان",
-        image: "../../images/Pepapic_Family_Set.jpg",
-        link: "../../products/شخصیت_های_پپاپیگ/",
+        image: "images/Pepapic_Family_Set.jpg",
+        link: "products/شخصیت_های_پپاپیگ/",
+    },
+    {
+        name: "ست میز ارایشی کامل",
+        price: "۲,۵۰۰,۰۰۰ تومان",
+        image: "images/Complete_vanity_set.jpg",
+        link: "products/ست_میز_ارایشی_کامل/",
     },
 ];
