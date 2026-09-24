@@ -84,4 +84,10 @@ const searchProducts = [
         image: "images/Complete_vanity_set.jpg",
         link: "products/ست_میز_ارایشی_کامل/",
     },
+    {
+        name: "سگ موزیکال هالی تویز",
+        price: "۵,۴۰۰,۰۰۰ تومان",
+        image: "images/Hola_Toys_Musical_Dog.jpg",
+        link: "products/سگ_موزیکال_هالی_تویز/",
+    },
 ];

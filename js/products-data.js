@@ -1,5 +1,13 @@
 const products = {
-    
+    Hola_Toys_Musical_Dog: {
+        name: "سگ موزیکال هالی تویز",
+        price: "۵,۴۰۰,۰۰۰ تومان",
+        image: "../../images/Hola_Toys_Musical_Dog.jpg",
+        description: "یه دوست بامزه برای بازی! 🌈",
+        link: "../../products/سگ_موزیکال_هالی_تویز/",
+        category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
     Complete_vanity_set: {
         name: "ست میز ارایشی کامل",
         price: "۲,۵۰۰,۰۰۰ تومان",
