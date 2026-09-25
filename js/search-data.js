@@ -90,4 +90,16 @@ const searchProducts = [
         image: "images/Hola_Toys_Musical_Dog.jpg",
         link: "products/سگ_موزیکال_هالی_تویز/",
     },
+    {
+        name: "لگو موتور کاوازاکی H2R",
+        price: "۴,۳۰۰,۰۰۰ تومان",
+        image: "images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
+        link: "products/لگو_موتور_کاوازاکی_H2R/",
+    },
+    {
+        name: "ست مینی فیگور لگو",
+        price: "۶۵۰,۰۰۰ تومان",
+        image: "images/Minecraft_figure.jpg",
+        link: "products/ست_مینی_فیگور/",
+    },
 ];

@@ -1,11 +1,11 @@
 const products = {
-    LEGO_Kawasaki_H2R_Motorcycle: {
-        name: "لگو موتور کاوازاکی H2R",
-        price: "۴,۳۰۰,۰۰۰ تومان",
-        image: "../../images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
-        description: "بساز، لذت ببر، افتخار کن ✨!",
-        link: "../../products/لگو_موتور_کاوازاکی_H2R/",
-        category: ["educational", "digital"],
+    Minecraft_figure: {
+        name: "ست مینی فیگور لگو",
+        price: "۶۵۰,۰۰۰ تومان",
+        image: "../../images/Minecraft_figure.jpg",
+        description: "شهر لگویی خودتو بساز! 🏙️",
+        link: "../../products/ست_مینی_فیگور/",
+        category: ["figure","lego"],
         Inventory: "✓ موجود در انبار"
     },
     Hola_Toys_Musical_Dog: {
@@ -15,6 +15,15 @@ const products = {
         description: "یه دوست بامزه برای بازی! 🌈",
         link: "../../products/سگ_موزیکال_هالی_تویز/",
         category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
+    LEGO_Kawasaki_H2R_Motorcycle: {
+        name: "لگو موتور کاوازاکی H2R",
+        price: "۴,۳۰۰,۰۰۰ تومان",
+        image: "../../images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
+        description: "بساز، لذت ببر، افتخار کن ✨!",
+        link: "../../products/لگو_موتور_کاوازاکی_H2R/",
+        category: ["educational", "digital","lego"],
         Inventory: "✓ موجود در انبار"
     },
     Complete_vanity_set: {
