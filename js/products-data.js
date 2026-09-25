@@ -1,11 +1,20 @@
 const products = {
+    Hola_Toys_Musical_Push_Down_Worm: {
+        name: "کرم فشاری هالی تویز",
+        price: "۳,۲۰۰,۰۰۰ تومان",
+        image: "../../images/Hola_Toys_Musical_Push_Down_Worm.jpg",
+        description: "بازی کن، بخند و حرکت کن! 🐛",
+        link: "../../products/کرم_فشاری_هالی_تویز/",
+        category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
     Minecraft_figure: {
         name: "ست مینی فیگور لگو",
         price: "۶۵۰,۰۰۰ تومان",
         image: "../../images/Minecraft_figure.jpg",
         description: "شهر لگویی خودتو بساز! 🏙️",
         link: "../../products/ست_مینی_فیگور/",
-        category: ["figure","lego"],
+        category: ["figure", "lego"],
         Inventory: "✓ موجود در انبار"
     },
     Hola_Toys_Musical_Dog: {
@@ -23,7 +32,7 @@ const products = {
         image: "../../images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
         description: "بساز، لذت ببر، افتخار کن ✨!",
         link: "../../products/لگو_موتور_کاوازاکی_H2R/",
-        category: ["educational", "digital","lego"],
+        category: ["lego"],
         Inventory: "✓ موجود در انبار"
     },
     Complete_vanity_set: {

@@ -54,7 +54,7 @@ const searchProducts = [
         image: "images/photo_2026-09-13_22-49-30.jpg",
         link: "products/product6/"
     },
-{
+    {
         name: "اتوبوس اموزشی برند هالی تویز",
         price: "۶,۸۰۰,۰۰۰ تومان",
         image: "images/Holly_Toys_educational_bus.jpg",
@@ -101,5 +101,11 @@ const searchProducts = [
         price: "۶۵۰,۰۰۰ تومان",
         image: "images/Minecraft_figure.jpg",
         link: "products/ست_مینی_فیگور/",
+    },
+    {
+        name: "کرم فشاری هالی تویز",
+        price: "۳,۲۰۰,۰۰۰ تومان",
+        image: "../../images/Hola_Toys_Musical_Push_Down_Worm.jpg",
+        link: "../../products/کرم_فشاری_هالی_تویز/",
     },
 ];
