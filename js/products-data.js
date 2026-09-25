@@ -1,4 +1,13 @@
 const products = {
+    Fighter_Jet_LEGO_Set: {
+        name: "لگو جت جنگنده ۶۴۴ قطعه",
+        price: "۲,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Fighter_Jet_LEGO_Set.jpg",
+        description: "کاملش کن، بهش افتخار کن! ✈️",
+        link: "../../products/لگو_جت_جنگنده/",
+        category: ["educational", "lego"],
+        Inventory: "✓ موجود در انبار"
+    },
     Hola_Toys_Musical_Push_Down_Worm: {
         name: "کرم فشاری هالی تویز",
         price: "۳,۲۰۰,۰۰۰ تومان",
@@ -14,7 +23,7 @@ const products = {
         image: "../../images/Minecraft_figure.jpg",
         description: "شهر لگویی خودتو بساز! 🏙️",
         link: "../../products/ست_مینی_فیگور/",
-        category: ["figure", "lego"],
+        category: ["figure","educational", "lego"],
         Inventory: "✓ موجود در انبار"
     },
     Hola_Toys_Musical_Dog: {
@@ -32,7 +41,7 @@ const products = {
         image: "../../images/LEGO_Kawasaki_H2R_Motorcycle.jpg",
         description: "بساز، لذت ببر، افتخار کن ✨!",
         link: "../../products/لگو_موتور_کاوازاکی_H2R/",
-        category: ["lego"],
+        category: ["lego", "educational"],
         Inventory: "✓ موجود در انبار"
     },
     Complete_vanity_set: {

@@ -105,7 +105,13 @@ const searchProducts = [
     {
         name: "کرم فشاری هالی تویز",
         price: "۳,۲۰۰,۰۰۰ تومان",
-        image: "../../images/Hola_Toys_Musical_Push_Down_Worm.jpg",
-        link: "../../products/کرم_فشاری_هالی_تویز/",
+        image: "images/Hola_Toys_Musical_Push_Down_Worm.jpg",
+        link: "products/کرم_فشاری_هالی_تویز/",
+    },
+    {
+        name: "لگو جت جنگنده ۶۴۴ قطعه",
+        price: "۲,۵۰۰,۰۰۰ تومان",
+        image: "images/Fighter_Jet_LEGO_Set.jpg",
+        link: "products/لگو_جت_جنگنده/",
     },
 ];
