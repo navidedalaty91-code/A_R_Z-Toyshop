@@ -120,4 +120,10 @@ const searchProducts = [
         image: "images/Cooper_Professional_Scooter.jpg",
         link: "products/اسکوتر_حرفه_ای_کوپر/",
     },
+    {
+        name: "لگو سیتی پلیس خارجی",
+        price: "۳,۰۰۰,۰۰۰ تومان",
+        image: "images/LEGO_City_Police_(International_Version).jpg",
+        link: "products/لگو_سیتی_پلیس_خارجی/",
+    },
 ];

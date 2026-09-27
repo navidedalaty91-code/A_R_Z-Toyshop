@@ -1,4 +1,13 @@
 const products = {
+    LEGO_City_Police_International_Version: {
+        name: "لگو سیتی پلیس خارجی",
+        price: "۳,۰۰۰,۰۰۰ تومان",
+        image: "../../images/LEGO_City_Police_(International_Version).jpg",
+        description: "شهر پلیسی خودت را بساز! 🚓",
+        link: "../../products/لگو_سیتی_پلیس_خارجی/",
+        category: "lego",
+        Inventory: "✓ موجود در انبار"
+    },
     Cooper_Professional_Scooter: {
         name: "اسکوتر حرفه ای کوپر",
         price: "۵,۶۰۰,۰۰۰ تومان",
