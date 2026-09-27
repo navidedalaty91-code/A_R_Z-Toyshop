@@ -1,4 +1,13 @@
 const products = {
+    Cooper_Professional_Scooter: {
+        name: "اسکوتر حرفه ای کوپر",
+        price: "۵,۶۰۰,۰۰۰ تومان",
+        image: "../../images/Cooper_Professional_Scooter.jpg",
+        description: "هیجان بیشتر، حرکت راحت‌تر! 🔥",
+        link: "../../products/اسکوتر_حرفه_ای_کوپر/",
+        category: "sport",
+        Inventory: "✓ موجود در انبار"
+    },
     Fighter_Jet_LEGO_Set: {
         name: "لگو جت جنگنده ۶۴۴ قطعه",
         price: "۲,۵۰۰,۰۰۰ تومان",
@@ -78,7 +87,7 @@ const products = {
         image: "../../images/photo_2026-09-13_22-49-33.jpg",
         description: "مبارزه هیجان‌انگیز با بلوتوث 🥊",
         link: "../../products/product5/",
-        category: ["action", "digital"],
+        category: ["action", "digital","sport"],
         Inventory: "✓ موجود در انبار"
     },
 
@@ -174,9 +183,10 @@ const products = {
         image: "../../images/Rechargeable_Digital_6_Piece_Boxing_Set.jpg",
         description: "واکنش نشون بده و لذت ببر! 🥊",
         link: "../../products/ست_بوکسینگ_دیجیتال_شارژی/",
-        category: ["action", "digital"],
+        category: ["action", "digital","sport"],
         Inventory: "✓ موجود در انبار"
     },
+
 };
 
 export { products };

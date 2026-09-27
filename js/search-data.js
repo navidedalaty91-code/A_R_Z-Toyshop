@@ -114,4 +114,10 @@ const searchProducts = [
         image: "images/Fighter_Jet_LEGO_Set.jpg",
         link: "products/لگو_جت_جنگنده/",
     },
+    {
+        name: "اسکوتر حرفه ای کوپر",
+        price: "۵,۶۰۰,۰۰۰ تومان",
+        image: "images/Cooper_Professional_Scooter.jpg",
+        link: "products/اسکوتر_حرفه_ای_کوپر/",
+    },
 ];
