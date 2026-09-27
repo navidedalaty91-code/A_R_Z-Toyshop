@@ -277,6 +277,21 @@ window.addEventListener(
     checkScroll
 );
 
+// دریافت دسته بندی از URL
+const urlParams = new URLSearchParams(window.location.search);
 
-// نمایش اولیه محصولات
-renderProducts(productsArray);
+const categoryFromURL = urlParams.get("category");
+
+
+// اگر دسته بندی از URL آمده باشد
+if (categoryFromURL) {
+
+    categoryFilter.value = categoryFromURL;
+
+    applyFilters();
+
+} else {
+
+    renderProducts(productsArray);
+
+}
