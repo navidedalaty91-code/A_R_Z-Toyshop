@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.R.Z toyshop | ست نجاری دلر باتری خور</title>
-        <meta name="description"
+    <meta name="description"
         content="این مجموعه با داشتن ابزارهای متنوع، تجربه‌ای سرگرم‌کننده از بازی‌های فنی و مهندسی برای کودکان ایجاد می‌کند. کودک می‌تواند با ابزارهای موجود به ساخت‌وساز و بازی‌های خلاقانه بپردازد. طراحی این محصول برای بازی‌های نقش‌آفرینی و سرگرمی در خانه مناسب است.">
 
     <meta name="robots" content="index, follow">
@@ -825,7 +825,13 @@
         @media (max-width: 600px) and (min-width: 400px) {
 
             #main-search-box {
-                width: 20rem;
+                width: 25rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #main-search-box {
+                width: 18rem;
             }
         }
 
@@ -861,8 +867,30 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-                .out-of-stock {
+
+        .out-of-stock {
             color: red;
+        }
+
+        dialog button,
+        dialog a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 40px;
+            padding: 0;
+            margin: 1rem 4px 0;
+            border: none;
+            border-radius: 8px;
+            background-color: #2563eb;
+            color: white;
+            font-family: Vazir;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -912,11 +940,12 @@
                     </button>
 
                     <dialog id="myDialog">
-                        <p>خرید این محصول فقط به صورت حضوری امکان‌پذیر است.</p>
+                        <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
 
                         <button onclick="myDialog.close()">
                             بستن
                         </button>
+                        <a href="tel:05133682848">تماس گرفتن</a>
                     </dialog>
                 </div>
                 <div class="i-need-grid-in-it">
@@ -1066,11 +1095,11 @@
 
         const inventory = document.querySelector(".product-Inventory");
 
-inventory.textContent = product.Inventory;
+        inventory.textContent = product.Inventory;
 
-if (product.Inventory !== "✓ موجود در انبار") {
-    inventory.classList.add("out-of-stock");
-    }
+        if (product.Inventory !== "✓ موجود در انبار") {
+            inventory.classList.add("out-of-stock");
+        }
     </script>
 </body>
 

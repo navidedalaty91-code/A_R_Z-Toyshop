@@ -826,10 +826,15 @@
         @media (max-width: 600px) and (min-width: 400px) {
 
             #main-search-box {
-                width: 20rem;
+                width: 25rem;
             }
         }
 
+        @media (max-width: 400px) {
+            #main-search-box {
+                width: 18rem;
+            }
+        }
 
         /* =========================
    Hover فقط برای موس
@@ -864,6 +869,26 @@
         }
                 .out-of-stock {
             color: red;
+        }
+                dialog button,
+        dialog a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 110px;
+            height: 40px;
+            padding: 0;
+            margin: 1rem 4px 0;
+            border: none;
+            border-radius: 8px;
+            background-color: #2563eb;
+            color: white;
+            font-family: Vazir;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1;
+            text-decoration: none;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -913,11 +938,12 @@
                     </button>
 
                     <dialog id="myDialog">
-                        <p>خرید این محصول فقط به صورت حضوری امکان‌پذیر است.</p>
+                        <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
 
                         <button onclick="myDialog.close()">
                             بستن
                         </button>
+                        <a href="tel:05133682848">تماس گرفتن</a>
                     </dialog>
                 </div>
                 <div class="i-need-grid-in-it">
