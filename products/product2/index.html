@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.R.Z toyshop | ست ناخن و ارایشی</title>
+    <meta name="description"
+        content="این اسباب بازی یک ست جذاب و پرطرفدار طرح کرومی برای تزیین ناخن کودکان است که شامل دستگاه چاپ ناخن یا استمپر و لوازم آرایشی مصرفی استاندارد کودک می‌باشد. طراحی ایمن و سرگرم‌کننده این مجموعه، تجربه‌ای شاد و خلاقانه را برای کودکان فراهم می‌کند.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="A.R.Z toyshop">
+
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link rel="stylesheet" href="../../reset.css">
     <style>
         @font-face {
@@ -853,7 +861,8 @@
             background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-                .out-of-stock {
+
+        .out-of-stock {
             color: red;
         }
     </style>
@@ -1058,11 +1067,11 @@
 
         const inventory = document.querySelector(".product-Inventory");
 
-inventory.textContent = product.Inventory;
+        inventory.textContent = product.Inventory;
 
-if (product.Inventory !== "✓ موجود در انبار") {
-    inventory.classList.add("out-of-stock");
-    }
+        if (product.Inventory !== "✓ موجود در انبار") {
+            inventory.classList.add("out-of-stock");
+        }
     </script>
 </body>
 

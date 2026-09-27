@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#60a5fa"></stop>
+      <stop offset="1" stop-color="#2563eb"></stop>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="64" height="64" rx="18" fill="url(#g)"></rect>
+
+  <!-- Ears -->
+  <circle cx="19" cy="23" r="9" fill="#fff"></circle>
+  <circle cx="45" cy="23" r="9" fill="#fff"></circle>
+
+  <circle cx="19" cy="23" r="4.5" fill="#f59e0b"></circle>
+  <circle cx="45" cy="23" r="4.5" fill="#f59e0b"></circle>
+
+  <!-- Head -->
+  <circle cx="32" cy="34" r="19" fill="#fff"></circle>
+
+  <!-- Eyes -->
+  <circle cx="25" cy="32" r="2.5" fill="#1e3a8a"></circle>
+  <circle cx="39" cy="32" r="2.5" fill="#1e3a8a"></circle>
+
+  <!-- Muzzle -->
+  <ellipse cx="32" cy="40" rx="8" ry="6" fill="#fef3c7"></ellipse>
+
+  <!-- Nose -->
+  <ellipse cx="32" cy="38.5" rx="3" ry="2.3" fill="#2563eb"></ellipse>
+
+  <!-- Smile -->
+  <path d="M32 40.5C30 44 27.5 44 26 42.5
+           M32 40.5C34 44 36.5 44 38 42.5" fill="none" stroke="#2563eb" stroke-width="1.8" stroke-linecap="round"></path>
+
+  <!-- Little star -->
+  <path d="M50 8L51.5 12.5L56 14L51.5 15.5L50 20L48.5 15.5L44 14L48.5 12.5Z" fill="#fbbf24"></path>
+</svg>
