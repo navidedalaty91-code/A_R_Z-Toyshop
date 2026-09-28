@@ -1,4 +1,13 @@
 const products = {
+    Bluetooth_enabled_drifting_electric_scooter: {
+        name: "اسکوتر شارژی بلوتوث دار",
+        price: "۴۹,۰۰۰,۰۰۰ تومان",
+        image: "../../images/Bluetooth_enabled_drifting_electric_scooter.jpg",
+        description: "هیجان را به حرکت تبدیل کن! 🛴",
+        link: "../../products/اسکوتر_شارژی_بلوتوث_دار/",
+        category: ["sport", "action","digital"],
+        Inventory: "✓ موجود در انبار"
+    },
         Harry_Potter_Chess_LEGO__Set_876_Pieces: {
         name: "لگو شطرنج‌هری پاتر ۸۷۶ قطعه",
         price: "۶,۵۰۰,۰۰۰ تومان",

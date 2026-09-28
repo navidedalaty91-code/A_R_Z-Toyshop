@@ -1,4 +1,9 @@
 const searchProducts = [
+    {
+        name: "اسکوتر شارژی بلوتوث دار",
+        price: "۴۹,۰۰۰,۰۰۰ تومان",
+        image: "images/Bluetooth_enabled_drifting_electric_scooter.jpg",
+        link: "products/اسکوتر_شارژی_بلوتوث_دار/",},
      {
         name: "لگو شطرنج‌هری پاتر ۸۷۶ قطعه",
         price: "۶,۵۰۰,۰۰۰ تومان",
