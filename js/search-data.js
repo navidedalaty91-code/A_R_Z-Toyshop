@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "اردک برند هالی تویز",
+        price: "۳,۵۰۰,۰۰۰ تومان",
+        image: "images/Hulie_Toys_brand_duck.jpg",
+        link: "products/اردک_برند_هالی_تویز/",
+    },
+    {
         name: "اسکوتر توربو چراغ دار",
         price: "۶,۶۰۰,۰۰۰ تومان",
         image: "images/Light_up_musical_Turbo_scooter.jpg",
