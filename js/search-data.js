@@ -1,4 +1,10 @@
 const searchProducts = [
+     {
+        name: "لگو شطرنج‌هری پاتر ۸۷۶ قطعه",
+        price: "۶,۵۰۰,۰۰۰ تومان",
+        image: "images/Harry_Potter_Chess_LEGO__Set_876_Pieces.jpg",
+        link: "products/لگو_شطرنج_هری_پاتر_۸۷۶_قطعه/",
+    },
     {
         name: "اردک برند هالی تویز",
         price: "۳,۵۰۰,۰۰۰ تومان",

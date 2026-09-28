@@ -1,4 +1,13 @@
 const products = {
+        Harry_Potter_Chess_LEGO__Set_876_Pieces: {
+        name: "لگو شطرنج‌هری پاتر ۸۷۶ قطعه",
+        price: "۶,۵۰۰,۰۰۰ تومان",
+        image: "../../images/Harry_Potter_Chess_LEGO__Set_876_Pieces.jpg",
+        description: "جادو بساز، شطرنج بازی کن! ♟️",
+        link: "../../products/لگو_شطرنج_هری_پاتر_۸۷۶_قطعه/",
+        category: "lego",
+        Inventory: "✓ موجود در انبار"
+    },
         Light_up_musical_Turbo_scooter: {
         name: "اسکوتر توربو چراغ دار",
         price: "۶,۶۰۰,۰۰۰ تومان",
