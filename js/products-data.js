@@ -1,4 +1,13 @@
 const products = {
+        Light_up_musical_Turbo_scooter: {
+        name: "اسکوتر توربو چراغ دار",
+        price: "۶,۶۰۰,۰۰۰ تومان",
+        image: "../../images/Light_up_musical_Turbo_scooter.jpg",
+        description: "بازی کن، حرکت کن! 🛴",
+        link: "../../products/اسکوتر_توربو_چراغ_دار/",
+        category: "sport",
+        Inventory: "✓ موجود در انبار"
+    },
     LEGO_City_Police_International_Version: {
         name: "لگو سیتی پلیس خارجی",
         price: "۳,۰۰۰,۰۰۰ تومان",
