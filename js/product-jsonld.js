@@ -1,27 +1,36 @@
 import { products } from "./products-data.js";
 
-// پیدا کردن محصول بر اساس آدرس صفحه
-const currentPath = decodeURIComponent(window.location.pathname);
+// صبر تا تمام صفحه و منابع آن کاملاً لود شوند
+window.addEventListener("load", () => {
 
-const product = Object.values(products).find(item => {
-    const productPath = new URL(item.link, window.location.origin).pathname;
-    return productPath === currentPath;
-});
+    // پیدا کردن محصول بر اساس آدرس صفحه
+    const currentPath = decodeURIComponent(window.location.pathname);
 
-if (product) {
+    const product = Object.values(products).find(item => {
+
+        const productPath =
+            new URL(item.link, window.location.origin).pathname;
+
+        return productPath === currentPath;
+    });
+
+    if (!product) {
+        return;
+    }
 
     // تبدیل اعداد فارسی به انگلیسی
     function persianToEnglishNumbers(value) {
+
         return value
-            .replace(/[۰-۹]/g, digit => "۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
+            .replace(/[۰-۹]/g, digit =>
+                "۰۱۲۳۴۵۶۷۸۹".indexOf(digit)
+            )
             .replace(/[٬،,]/g, "");
     }
 
-    // تبدیل قیمت مثل:
-    // "۶,۶۰۰,۰۰۰ تومان"
-    // به:
-    // 66000000 ریال
+    // تبدیل قیمت تومان به ریال
     function getPriceInRial(price) {
+
         const number = persianToEnglishNumbers(price)
             .replace(/[^\d]/g, "");
 
@@ -29,7 +38,9 @@ if (product) {
     }
 
     const jsonLd = {
+
         "@context": "https://schema.org",
+
         "@type": "Product",
 
         "name": product.name,
@@ -37,7 +48,10 @@ if (product) {
         "description": product.description,
 
         "image": [
-            new URL(product.image, window.location.href).href
+            new URL(
+                product.image,
+                window.location.href
+            ).href
         ],
 
         "brand": {
@@ -46,6 +60,7 @@ if (product) {
         },
 
         "offers": {
+
             "@type": "Offer",
 
             "url": window.location.href,
@@ -61,11 +76,17 @@ if (product) {
         }
     };
 
+    // ساخت تگ JSON-LD
     const script = document.createElement("script");
 
     script.type = "application/ld+json";
 
-    script.textContent = JSON.stringify(jsonLd);
+    script.textContent = JSON.stringify(
+        jsonLd,
+        null,
+        2
+    );
 
     document.head.appendChild(script);
-}
+
+});

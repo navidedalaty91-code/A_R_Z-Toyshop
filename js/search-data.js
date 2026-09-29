@@ -1,10 +1,17 @@
 const searchProducts = [
     {
+        name: "موتور شارژی چراغ دار",
+        price: "۷,۳۰۰,۰۰۰ تومان",
+        image: "images/Rechargeable_motorcycle_with_lights.jpg",
+        link: "products/موتور_شارژی_چراغ_دار/",
+    },
+    {
         name: "اسکوتر شارژی بلوتوث دار",
         price: "۴۹,۰۰۰,۰۰۰ تومان",
         image: "images/Bluetooth_enabled_drifting_electric_scooter.jpg",
-        link: "products/اسکوتر_شارژی_بلوتوث_دار/",},
-     {
+        link: "products/اسکوتر_شارژی_بلوتوث_دار/",
+    },
+    {
         name: "لگو شطرنج‌هری پاتر ۸۷۶ قطعه",
         price: "۶,۵۰۰,۰۰۰ تومان",
         image: "images/Harry_Potter_Chess_LEGO__Set_876_Pieces.jpg",

@@ -1,11 +1,20 @@
 const products = {
+        Rechargeable_motorcycle_with_lights: {
+        name: "موتور شارژی چراغ دار",
+        price: "۷,۳۰۰,۰۰۰ تومان",
+        image: "../../images/Rechargeable_motorcycle_with_lights.jpg",
+        description: "سواری کوچیک، هیجان بزرگ! 🏍️",
+        link: "../../products/موتور_شارژی_چراغ_دار/",
+        category: ["sport","digital"],
+        Inventory: "✓ موجود در انبار"
+    },
     Bluetooth_enabled_drifting_electric_scooter: {
         name: "اسکوتر شارژی بلوتوث دار",
         price: "۴۹,۰۰۰,۰۰۰ تومان",
         image: "../../images/Bluetooth_enabled_drifting_electric_scooter.jpg",
         description: "هیجان را به حرکت تبدیل کن! 🛴",
         link: "../../products/اسکوتر_شارژی_بلوتوث_دار/",
-        category: ["sport", "action","digital"],
+        category: ["sport","digital"],
         Inventory: "✓ موجود در انبار"
     },
         Harry_Potter_Chess_LEGO__Set_876_Pieces: {
@@ -24,15 +33,6 @@ const products = {
         description: "بازی کن، حرکت کن! 🛴",
         link: "../../products/اسکوتر_توربو_چراغ_دار/",
         category: "sport",
-        Inventory: "✓ موجود در انبار"
-    },
-    LEGO_City_Police_International_Version: {
-        name: "لگو سیتی پلیس خارجی",
-        price: "۳,۰۰۰,۰۰۰ تومان",
-        image: "../../images/LEGO_City_Police_(International_Version).jpg",
-        description: "شهر پلیسی خودت را بساز! 🚓",
-        link: "../../products/لگو_سیتی_پلیس_خارجی/",
-        category: "lego",
         Inventory: "✓ موجود در انبار"
     },
     Cooper_Professional_Scooter: {
@@ -78,6 +78,15 @@ const products = {
         description: "یه دوست بامزه برای بازی! 🌈",
         link: "../../products/سگ_موزیکال_هالی_تویز/",
         category: ["educational", "digital"],
+        Inventory: "✓ موجود در انبار"
+    },
+    LEGO_City_Police_International_Version: {
+        name: "لگو سیتی پلیس خارجی",
+        price: "۳,۰۰۰,۰۰۰ تومان",
+        image: "../../images/LEGO_City_Police_(International_Version).jpg",
+        description: "شهر پلیسی خودت را بساز! 🚓",
+        link: "../../products/لگو_سیتی_پلیس_خارجی/",
+        category: "lego",
         Inventory: "✓ موجود در انبار"
     },
     LEGO_Kawasaki_H2R_Motorcycle: {
