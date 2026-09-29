@@ -50,12 +50,14 @@ function createProductCard(product) {
     return `
         <div class="product-card">
 
+            <a href="${product.link}">
             <img
                 src="${product.image}"
                 alt="${product.name}"
                 class="product-image"
                 loading="lazy"
             >
+            </a>
 
             <div class="product-content">
 
@@ -134,7 +136,7 @@ function loadMoreProducts() {
         );
 
 
-    nextProducts.forEach(function(product) {
+    nextProducts.forEach(function (product) {
 
         productsGrid.insertAdjacentHTML(
             "beforeend",
@@ -222,7 +224,7 @@ function applyFilters() {
 
 
     const filteredProducts =
-        productsArray.filter(function(product) {
+        productsArray.filter(function (product) {
 
             // بررسی دسته بندی
             const categoryMatch =
@@ -240,7 +242,7 @@ function applyFilters() {
 
             const searchMatch =
                 searchWords.length === 0 ||
-                searchWords.every(function(word) {
+                searchWords.every(function (word) {
 
                     return productText.includes(word);
 

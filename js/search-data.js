@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "شخصیت پی جی مکس",
+        price: "۲,۳۰۰,۰۰۰ تومان",
+        image: "images/PJ_Masks_character.jpg",
+        link: "products/شخصیت_پی_جی_مکس/",
+    },
+    {
         name: "موتور شارژی چراغ دار",
         price: "۷,۳۰۰,۰۰۰ تومان",
         image: "images/Rechargeable_motorcycle_with_lights.jpg",

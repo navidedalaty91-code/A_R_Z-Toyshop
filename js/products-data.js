@@ -1,4 +1,13 @@
 const products = {
+    PJ_Masks_character: {
+        name: "شخصیت پی جی مکس",
+        price: "۲,۳۰۰,۰۰۰ تومان",
+        image: "../../images/PJ_Masks_character.jpg",
+        description: "وقتِ قهرمان‌بازی! 🦸‍♂️",
+        link: "../../products/شخصیت_پی_جی_مکس/",
+        category: "figure",
+        Inventory: "✓ موجود در انبار"
+    },
         Rechargeable_motorcycle_with_lights: {
         name: "موتور شارژی چراغ دار",
         price: "۷,۳۰۰,۰۰۰ تومان",
