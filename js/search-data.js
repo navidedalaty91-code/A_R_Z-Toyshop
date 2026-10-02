@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "موتور کودک مدل وسپی",
+        price: "۳,۲۵۰,۰۰۰ تومان",
+        image: "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg",
+        link: "../../products/product/?id=ds45d454e54d5x4cscsx",
+    },
+    {
         name: "شخصیت پی جی مکس",
         price: "۲,۳۰۰,۰۰۰ تومان",
         image: "images/PJ_Masks_character.jpg",
