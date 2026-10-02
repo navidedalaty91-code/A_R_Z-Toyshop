@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "ست پیست اسکیت و دوچرخه",
+        price: "۲,۸۸۰,۰۰۰  تومان",
+        image: "images/Bicycle_and_skating_track_with_equipment.jpg",
+        link: "products/product/?id=sdw7fc84d6565xc446d5",
+    },
+    {
         name: "ماکت موتور CB1300",
         price: "۴,۶۰۰,۰۰۰ تومان",
         image:"images/Die_cast_Honda_CB1300_model.jpg",
