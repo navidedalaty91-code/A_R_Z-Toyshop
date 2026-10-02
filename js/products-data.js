@@ -1,11 +1,46 @@
 const products = {
+    ed4554fe8dc54ec45xcd: {
+        name: "لگو جیپ کنترلی 314 تکه",
+        price: "۴,۶۰۰,۰۰۰ تومان",
+        image: "../../images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
+        description: "بساز، کنترل کن، لذت ببر! 🚙",
+        link: "../../products/product/?id=ed4554fe8dc54ec45xcd",
+        category: "educational",
+        Inventory: "✓ موجود در انبار",
+
+        // توضیح کوتاه زیر نام محصول
+        shortDescription:
+            "مجموعه ساختنی ۳۱۳ قطعه برای ساخت یک جیپ آفرود کنترلی با ریموت.",
+
+        // توضیحات کامل محصول
+        fullDescription:
+            "ساختنی ۳۱۳ تکه مدل جیپ کنترلی ، یک مجموعه ساختنی سرگرم‌کننده است که پس از مونتاژ به یک خودروی آفرود کنترلی تبدیل می‌شود. این مجموعه دارای ۳۱۳ قطعه پلاستیکی و ریموت کنترل است و امکان هدایت خودرو را فراهم می‌کند. ساختن مدل و سپس بازی با خودروی ساخته‌شده، تجربه‌ای ترکیبی از سرگرمی و ساختنی برای کودکان و نوجوانان علاقه‌مند به ماشین‌ها ایجاد می‌کند.",
+
+        // کارت‌های ویژگی
+        features: [
+            { title: "🧩 تعداد قطعات", value: "۳۱۳ قطعه" },
+            { title: "🎮 کنترل", value: "ریموت کنترل" },
+            { title: "🚙 نوع", value: "جیپ آفرود کنترلی" }
+        ],
+
+        // مشخصات محصول
+        specs: [
+            { title: "نوع", value: "مدل‌سازی و ساختنی" },
+            { title: "مدل", value: "جیپ کنترلی" },
+            { title: "تعداد قطعات", value: "۳۱۳ قطعه" },
+            { title: "جنس", value: "پلاستیک" },
+            { title: "اقلام همراه", value: "۳۱۳ قطعه و ریموت کنترل" },
+            { title: "نوع کنترل", value: "کنترلی" },
+            { title: "مناسب برای", value: "کودکان و نوجوانان" }
+        ]
+    },
     ds45d454e54d5x4cscsx: {
         name: "موتور کودک مدل وسپی",
         price: "۳,۲۵۰,۰۰۰ تومان",
         image: "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg",
         description: "یک موتور کوچولو، کلی ماجرا! 🏍️",
         link: "../../products/product/?id=ds45d454e54d5x4cscsx",
-        category: "ride-on",
+        category: ["sport", "digital"],
         Inventory: "✓ موجود در انبار",
 
         // توضیح کوتاه زیر نام محصول

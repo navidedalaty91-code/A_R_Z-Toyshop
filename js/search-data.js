@@ -1,9 +1,15 @@
 const searchProducts = [
     {
+        name: "لگو جیپ کنترلی 314 تکه",
+        price: "۴,۶۰۰,۰۰۰ تومان",
+        image: "images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
+        link: "products/product/?id=ed4554fe8dc54ec45xcd",
+    },
+    {
         name: "موتور کودک مدل وسپی",
         price: "۳,۲۵۰,۰۰۰ تومان",
-        image: "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg",
-        link: "../../products/product/?id=ds45d454e54d5x4cscsx",
+        image: "images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg",
+        link: "products/product/?id=ds45d454e54d5x4cscsx",
     },
     {
         name: "شخصیت پی جی مکس",
