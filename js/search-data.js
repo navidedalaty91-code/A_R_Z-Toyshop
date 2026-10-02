@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "ماشین کودک موزیکال",
+        price: "۵,۰۰۰,۰۰۰ تومان",
+        image: "images/Musical_baby_car_with_handle.jpg",
+        link: "products/product/?id=wdxs54dw4s6d5e64ds1s",
+    },
+    {
         name: "لگو کشتی کروز 2428 تکه",
         price: "۸,۵۰۰,۰۰۰ تومان",
         image: "images/2,428_Piece_Cruise_Ship_Lego_Set.jpg",

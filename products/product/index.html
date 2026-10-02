@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <meta name="description"
-        content="">
+    <meta name="description" content="">
 
     <meta name="robots" content="index, follow">
 
@@ -50,7 +49,7 @@
             background-color: #f8fafc;
             overflow-x: hidden;
             scroll-behavior: smooth;
-            
+
         }
 
         header {
@@ -126,16 +125,16 @@
             width: 20rem;
         }
 
-.main-div {
-    background-color: #fff;
-    margin: 1rem 6rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 15px;
-    display: flex;
-    gap: 4rem;
-    padding: 1rem 3rem;
-    height: auto;
-}
+        .main-div {
+            background-color: #fff;
+            margin: 1rem 6rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 15px;
+            display: flex;
+            gap: 4rem;
+            padding: 1rem 3rem;
+            height: auto;
+        }
 
         .h2-under-div-under-div {
             font-weight: 900;
@@ -200,9 +199,10 @@
             font-family: Vazir;
             cursor: pointer;
         }
-        .main-div > div:last-child {
-    flex: 1;
-}
+
+        .main-div>div:last-child {
+            flex: 1;
+        }
 
         dialog::backdrop {
             background-color: rgba(0, 0, 0, 0.5);
@@ -263,16 +263,16 @@
             }
         }
 
-.div-under-div-img {
-    background-color: #f8fafc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0;
-    border-radius: 15px;
-    width: 25rem;
-    min-width: 25rem;
-}
+        .div-under-div-img {
+            background-color: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            border-radius: 15px;
+            width: 25rem;
+            min-width: 25rem;
+        }
 
         .star {
             color: #f59e0b;
@@ -895,58 +895,113 @@
             text-decoration: none;
             cursor: pointer;
         }
-                dialog p{
+
+        dialog p {
             line-height: 2;
         }
 
-#loading {
-        position: fixed;
-        inset: 0;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 99999;
+        #loading {
+            position: fixed;
+            inset: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
 
-        opacity: 1;
-    }
-
-    #loading.hide {
-        animation: fadeOut 0.4s ease forwards;
-    }
-
-    .loader {
-        width: 45px;
-        height: 45px;
-        border: 5px solid #e2e8f0;
-        border-top-color: #2563eb;
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-    }
-
-    #loading p {
-        margin-top: 15px;
-        color: #2563eb;
-        font-size: 1rem;
-    }
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes fadeOut {
-        from {
             opacity: 1;
         }
 
-        to {
-            opacity: 0;
+        #loading.hide {
+            animation: fadeOut 0.4s ease forwards;
         }
-    }
 
+        .loader {
+            width: 45px;
+            height: 45px;
+            border: 5px solid #e2e8f0;
+            border-top-color: #2563eb;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        #loading p {
+            margin-top: 15px;
+            color: #2563eb;
+            font-size: 1rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
+
+        /* =========================
+   PRODUCT GALLERY
+========================= */
+
+        .product-gallery {
+            width: 25rem;
+            min-width: 25rem;
+        }
+
+        .product-thumbnails {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .product-thumbnail {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 10px;
+            border: 2px solid #e2e8f0;
+            cursor: pointer;
+            transition: .2s ease;
+        }
+
+        .product-thumbnail.active {
+            border-color: #2563eb;
+        }
+
+        @media (max-width: 960px) {
+
+            .product-gallery {
+                width: 90%;
+                min-width: 90%;
+                max-width: 30rem;
+            }
+
+        }
+
+        @media (max-width: 650px) {
+
+            .product-gallery {
+                width: 100%;
+                min-width: 100%;
+            }
+
+            .product-thumbnail {
+                width: 60px;
+                height: 60px;
+            }
+
+        }
     </style>
 </head>
 
@@ -954,142 +1009,148 @@
     <div class="loader"></div>
     <p>در حال بارگذاری...</p>
 </div>
-    <header>
-        <div>
-            <h1><span class="title1">A.R.Z toy</span><span class="title2">shop</span></h1>
-        </div>
-        <div><input type="text" placeholder="محصول مورد نظر را وارد کنید..." id="main-search-box"></div>
-        <nav>
-            <a href="../../index.html">خانه</a>
-            <a href="../../all/all products/">دسته‌بندی‌ها</a>
-            <a href="../../all/all products/">محصولات</a>
-            <a href="#footer">درباره ما</a>
-        </nav>
+<header>
+    <div>
+        <h1><span class="title1">A.R.Z toy</span><span class="title2">shop</span></h1>
+    </div>
+    <div><input type="text" placeholder="محصول مورد نظر را وارد کنید..." id="main-search-box"></div>
+    <nav>
+        <a href="../../index.html">خانه</a>
+        <a href="../../all/all products/">دسته‌بندی‌ها</a>
+        <a href="../../all/all products/">محصولات</a>
+        <a href="#footer">درباره ما</a>
+    </nav>
 
-    </header>
+</header>
 
-    <main>
-        <p class="first-p-i-write">
-            <a href="../../index.html">خانه</a>
-            ←
-            <a href="../../all/all products/"> محصولات</a>
-            ←
-            <span class="product-name"></span>
-        </p>
-        <div class="main-div">
+<main>
+    <p class="first-p-i-write">
+        <a href="../../index.html">خانه</a>
+        ←
+        <a href="../../all/all products/"> محصولات</a>
+        ←
+        <span class="product-name"></span>
+    </p>
+    <div class="main-div">
+        <div class="product-gallery">
+
             <div class="div-under-div-img">
-                <img src="" alt="" class="img-under-main-div product-image">
+                <img src="" alt="" class="img-under-main-div product-image" id="mainProductImage">
             </div>
-            <div>
-                <h2 class="h2-under-div-under-div product-name"></h2>
-                <p class="p-brother-of-h2 product-short-description"></p>
-                <div class="price-box">
-                    <p class="second-p-under-price-box product-price"></p>
-                </div>
-                <p class="mojoodi product-Inventory"></p>
-                <div class="buy-button-container">
-                    <button onclick="myDialog.showModal()" class="button-for-buy">
-                        🛒 خرید محصول
+
+            <div class="product-thumbnails" id="productThumbnails"></div>
+
+        </div>
+        <div>
+            <h2 class="h2-under-div-under-div product-name"></h2>
+            <p class="p-brother-of-h2 product-short-description"></p>
+            <div class="price-box">
+                <p class="second-p-under-price-box product-price"></p>
+            </div>
+            <p class="mojoodi product-Inventory"></p>
+            <div class="buy-button-container">
+                <button onclick="myDialog.showModal()" class="button-for-buy">
+                    🛒 خرید محصول
+                </button>
+                <dialog id="myDialog">
+                    <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
+
+                    <button onclick="myDialog.close()">
+                        بستن
                     </button>
-                    <dialog id="myDialog">
-                        <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
-
-                        <button onclick="myDialog.close()">
-                            بستن
-                        </button>
-                        <a href="tel:05133682848">تماس گرفتن</a>
-                    </dialog>
-                </div>
-                <div class="i-need-grid-in-it product-features">
-                </div>
+                    <a href="tel:05133682848">تماس گرفتن</a>
+                </dialog>
+            </div>
+            <div class="i-need-grid-in-it product-features">
             </div>
         </div>
-        <div class="main-div-in-main">
-            <h2 class="h2-under-main">توضیحات محصول</h2>
-            <p class="p-under-main product-description"></p>
-            <h3 class="h3-under-main">مشخصات محصول</h3>
-            <div class="div-div-main product-specs">
+    </div>
+    <div class="main-div-in-main">
+        <h2 class="h2-under-main">توضیحات محصول</h2>
+        <p class="p-under-main product-description"></p>
+        <h3 class="h3-under-main">مشخصات محصول</h3>
+        <div class="div-div-main product-specs">
+        </div>
+    </div>
+    <section class="related" id="product">
+
+        <h2>
+            محصولات محبوب دیگر
+        </h2>
+
+
+        <div class="related-products"></div>
+
+    </section>
+</main>
+<footer class="footer" id="footer">
+    <div class="main-div-in-footer">
+        <div>
+            <h6 class="footer-head">🧸A.R.Z toyshop</h6>
+            <p>فروشگاه آنلاین اسباب‌بازی با مجموعه‌ای<br> از محصولات جذاب و سرگرم‌کننده برای کودکان.</p>
+        </div>
+        <div>
+            <h6 class="footer-head">دسترسی سریع</h6>
+            <div class="quick-access">
+                <a href="../../index.html">خانه</a>
+                <a href="../../all/all products/">محصولات</a>
+                <a href="../../all/all products/">دسته بندی ها</a>
             </div>
         </div>
-        <section class="related" id="product">
-
-            <h2>
-                محصولات محبوب دیگر
-            </h2>
-
-
-            <div class="related-products"></div>
-
-        </section>
-    </main>
-    <footer class="footer" id="footer">
-        <div class="main-div-in-footer">
-            <div>
-                <h6 class="footer-head">🧸A.R.Z toyshop</h6>
-                <p>فروشگاه آنلاین اسباب‌بازی با مجموعه‌ای<br> از محصولات جذاب و سرگرم‌کننده برای کودکان.</p>
-            </div>
-            <div>
-                <h6 class="footer-head">دسترسی سریع</h6>
-                <div class="quick-access">
-                    <a href="../../index.html">خانه</a>
-                    <a href="../../all/all products/">محصولات</a>
-                    <a href="../../all/all products/">دسته بندی ها</a>
-                </div>
-            </div>
-            <div>
-                <h6 class="footer-head">ارتباط با ما</h6>
-                <a href="tel:05133682848" style="text-decoration: none;color: #fff">تلفن: 05133682848</a>
-                <div class="social-icons">
-                    <a href="https://www.instagram.com/arz_toys?stkn=MTI5OXJsMmo5ZjV4Yw==">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon1" width="30" height="30" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                            <circle cx="12" cy="12" r="4"></circle>
-                            <circle cx="17.5" cy="6.5" r="1"></circle>
-                        </svg>
-                    </a>
-                    <a href="https://t.me/joinchat/AAAAAD0H10K_He_VM_z60Q">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon2" width="30" height="30" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M21.9 4.2 18.8 19c-.2 1-1.1 1.3-1.9.8l-5.4-4-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.5 10-9c.4-.4-.1-.6-.6-.2L5.3 12.2.1 10.6c-1.1-.3-1.1-1.1.2-1.6L20.5 1.3c.9-.3 1.7.2 1.4 1.9z" />
-                        </svg>
-                    </a>
-                </div>
+        <div>
+            <h6 class="footer-head">ارتباط با ما</h6>
+            <a href="tel:05133682848" style="text-decoration: none;color: #fff">تلفن: 05133682848</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/arz_toys?stkn=MTI5OXJsMmo5ZjV4Yw==">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon1" width="30" height="30" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <circle cx="17.5" cy="6.5" r="1"></circle>
+                    </svg>
+                </a>
+                <a href="https://t.me/joinchat/AAAAAD0H10K_He_VM_z60Q">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon2" width="30" height="30" viewBox="0 0 24 24"
+                        fill="currentColor">
+                        <path
+                            d="M21.9 4.2 18.8 19c-.2 1-1.1 1.3-1.9.8l-5.4-4-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.5 10-9c.4-.4-.1-.6-.6-.2L5.3 12.2.1 10.6c-1.1-.3-1.1-1.1.2-1.6L20.5 1.3c.9-.3 1.7.2 1.4 1.9z" />
+                    </svg>
+                </a>
             </div>
         </div>
+    </div>
 
-    </footer>
-    <p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
-    <script type="module" src="../../js/products-data.js"></script>
-    <script type="module" src="../../js/related-products.js"></script>
-    <script>
-        const searchInput = document.querySelector("#main-search-box");
+</footer>
+<p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
+<script type="module" src="../../js/products-data.js"></script>
+<script type="module" src="../../js/related-products.js"></script>
+<script>
+    const searchInput = document.querySelector("#main-search-box");
 
-        searchInput.addEventListener("keydown", function (event) {
+    searchInput.addEventListener("keydown", function (event) {
 
-            if (event.key === "Enter") {
+        if (event.key === "Enter") {
 
-                const searchValue = searchInput.value.trim();
+            const searchValue = searchInput.value.trim();
 
-                if (searchValue !== "") {
+            if (searchValue !== "") {
 
-                    window.location.href =
-                        "../../search.html?search=" +
-                        encodeURIComponent(searchValue);
-
-                }
+                window.location.href =
+                    "../../search.html?search=" +
+                    encodeURIComponent(searchValue);
 
             }
 
-        });
-    </script>
-        <script type="module" src="../../js/product-jsonld.js"></script>
-        <script type="module" src="../../js/product-page2.js"></script>
+        }
+
+    });
+</script>
+<script type="module" src="../../js/product-jsonld.js"></script>
+<script type="module" src="../../js/product-page2.js"></script>
 
 <script>
-window.addEventListener("load", () => {
+    window.addEventListener("load", () => {
 
         setTimeout(() => {
 

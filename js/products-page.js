@@ -51,12 +51,12 @@ function createProductCard(product) {
         <div class="product-card">
 
             <a href="${product.link}">
-            <img
-                src="${product.image}"
-                alt="${product.name}"
-                class="product-image"
-                loading="lazy"
-            >
+<img
+    src="${product.images?.[0] || product.image}"
+    alt="${product.name}"
+    class="product-image"
+    loading="lazy"
+>
             </a>
 
             <div class="product-content">

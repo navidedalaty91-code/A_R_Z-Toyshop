@@ -488,10 +488,55 @@ document.querySelector(".product-price").textContent =
 
 
 // تصویر
+// تصاویر محصول
 const image = document.querySelector(".product-image");
+const thumbnailsContainer = document.querySelector("#productThumbnails");
 
-image.src = product.image;
+// اگر محصول چند تصویر داشته باشد از images استفاده می‌شود
+// اگر فقط یک تصویر داشته باشد از image استفاده می‌شود
+const productImages = product.images || [product.image];
+
+
+// نمایش تصویر اصلی
+image.src = productImages[0];
 image.alt = product.name;
+
+
+// اگر قسمت تصاویر کوچک وجود داشت
+if (thumbnailsContainer) {
+
+    thumbnailsContainer.innerHTML = "";
+
+    productImages.forEach((imageSrc, index) => {
+
+        const thumbnail = document.createElement("img");
+
+        thumbnail.src = imageSrc;
+        thumbnail.alt = `${product.name} - تصویر ${index + 1}`;
+        thumbnail.className = "product-thumbnail";
+
+        // تصویر اول فعال باشد
+        if (index === 0) {
+            thumbnail.classList.add("active");
+        }
+
+        // با کلیک روی تصویر کوچک
+        thumbnail.addEventListener("click", () => {
+
+            image.src = imageSrc;
+
+            document
+                .querySelectorAll(".product-thumbnail")
+                .forEach(img => {
+                    img.classList.remove("active");
+                });
+
+            thumbnail.classList.add("active");
+        });
+
+        thumbnailsContainer.appendChild(thumbnail);
+    });
+}
 
 
 // موجودی

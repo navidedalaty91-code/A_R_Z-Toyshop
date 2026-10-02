@@ -5,6 +5,7 @@ const noResult = document.querySelector("#no-result");
 
 // یکسان‌سازی متن فارسی
 function normalizeText(text) {
+
     return text
         .toLowerCase()
         .trim()
@@ -14,6 +15,7 @@ function normalizeText(text) {
         .replace(/آ/g, "ا")
         .replace(/\u200c/g, " ")
         .replace(/\s+/g, " ");
+
 }
 
 
@@ -23,7 +25,11 @@ function createProductCard(product) {
     return `
         <div class="search-product-card">
 
-            <img src="${product.image}" alt="${product.name}">
+            <img
+                src="${product.images?.[0] || product.image}"
+                alt="${product.name}"
+                loading="lazy"
+            >
 
             <h3>${product.name}</h3>
 
@@ -35,6 +41,7 @@ function createProductCard(product) {
 
         </div>
     `;
+
 }
 
 
@@ -46,25 +53,30 @@ function performSearch(searchValue) {
     productsContainer.innerHTML = "";
 
     if (searchValue === "") {
+
         noResult.style.display = "none";
+
         return;
     }
 
 
-    const searchWords = searchValue.split(" ");
+    const searchWords =
+        searchValue.split(" ");
 
 
-    const foundProducts = searchProducts.filter(function(product) {
+    const foundProducts =
+        searchProducts.filter(function(product) {
 
-        const productText = normalizeText(product.name);
+            const productText =
+                normalizeText(product.name);
 
-        return searchWords.every(function(word) {
+            return searchWords.every(function(word) {
 
-            return productText.includes(word);
+                return productText.includes(word);
+
+            });
 
         });
-
-    });
 
 
     if (foundProducts.length > 0) {
@@ -88,14 +100,17 @@ function performSearch(searchValue) {
 
 
 // گرفتن عبارت سرچ از URL
-const urlParams = new URLSearchParams(window.location.search);
+const urlParams =
+    new URLSearchParams(window.location.search);
 
-const searchValueFromURL = urlParams.get("search");
+const searchValueFromURL =
+    urlParams.get("search");
 
 
 if (searchValueFromURL) {
 
-    searchInput.value = searchValueFromURL;
+    searchInput.value =
+        searchValueFromURL;
 
     performSearch(searchValueFromURL);
 
@@ -103,24 +118,29 @@ if (searchValueFromURL) {
 
 
 // اگر کاربر داخل search.html دوباره سرچ کرد
-searchInput.addEventListener("keydown", function(event) {
+searchInput.addEventListener(
+    "keydown",
+    function(event) {
 
-    if (event.key === "Enter") {
+        if (event.key === "Enter") {
 
-        const searchValue = searchInput.value.trim();
+            const searchValue =
+                searchInput.value.trim();
 
-        if (searchValue !== "") {
+            if (searchValue !== "") {
 
-            window.history.replaceState(
-                {},
-                "",
-                "?search=" + encodeURIComponent(searchValue)
-            );
+                window.history.replaceState(
+                    {},
+                    "",
+                    "?search=" +
+                    encodeURIComponent(searchValue)
+                );
 
-            performSearch(searchValue);
+                performSearch(searchValue);
+
+            }
 
         }
 
     }
-
-});
+);
