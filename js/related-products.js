@@ -1,51 +1,32 @@
 import { products } from "./products-data.js";
 
 const popularProducts = [
-    "Remote_controlled_airplane",
-    "Rechargeable_Bluetooth_Boxing_Machine",
-    "Dual_function_ball_water_gun",
-    "Carpentry_set_with_battery_powered_drill",
-    "Game_console_with_500_games",
-    "Hair_braiding_set",
-    "Nail_and_Makeup_Set",
-    "Instant_print_camera"
+    "wds8jdi8wsjsi982sj2w",
+    "mje8is3ur3883wiikdx3",
+    "fdvdxvcew9rwoj3ee02e",
+    "dpkpe3ed3k0edpwd33ed",
+    "w2se8dyhwsdi8jwwdiu8",
+    "vf8d4v5cx546d5f78v5c",
+    "sdj5ds25cds1cs2dx54c",
+    "cx3v21df65v13cx2r2r1"
 ];
 
 const relatedContainer = document.querySelector(".related-products");
 
 if (relatedContainer) {
 
-    // پیدا کردن پوشه محصول فعلی
-    const pathParts = window.location.pathname
-        .split("/")
-        .filter(Boolean);
-
-    const currentFolder =
-        pathParts.at(-1) === "index.html"
-            ? pathParts.at(-2)
-            : pathParts.at(-1);
-
+    // گرفتن ID محصول فعلی از URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const currentProductId = urlParams.get("id");
 
     // محصولات محبوب را تبدیل به اطلاعات کامل می‌کنیم
     // محصول فعلی را حذف می‌کنیم
     // و فقط ۴ محصول نشان می‌دهیم
     const relatedProducts = popularProducts
+        .filter(id => id !== currentProductId)
         .map(id => products[id])
-        .filter(product => {
-
-            if (!product) return false;
-
-            // لینک محصول فعلی را بررسی می‌کنیم
-            const productFolder = product.link
-                .replace(/\/$/, "")
-                .split("/")
-                .filter(Boolean)
-                .at(-1);
-
-            return productFolder !== currentFolder;
-        })
+        .filter(product => product)
         .slice(0, 4);
-
 
     // ساخت کارت‌ها
     relatedProducts.forEach(product => {

@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A.R.Z toyshop | کنسول بازی 500 بازی</title>
+    <title></title>
     <meta name="description"
-        content="کنسول بازی ۵۰۰ بازی یک انتخاب جذاب برای علاقه‌مندان به بازی‌های کلاسیک و سرگرم‌کننده است. این محصول دارای گیم‌پد شارژی بوده و مجموعه‌ای از بازی‌های متنوع را در اختیار شما قرار می‌دهد.">
+        content="">
 
     <meta name="robots" content="index, follow">
 
@@ -50,6 +50,7 @@
             background-color: #f8fafc;
             overflow-x: hidden;
             scroll-behavior: smooth;
+            
         }
 
         header {
@@ -122,18 +123,19 @@
         }
 
         .img-under-main-div {
-            width: 30rem;
+            width: 20rem;
         }
 
-        .main-div {
-            background-color: #fff;
-            margin: 1rem 6rem;
-            border: 1px solid #e2e8f0;
-            border-radius: 15px;
-            display: flex;
-            justify-content: space-around;
-            height: auto;
-        }
+.main-div {
+    background-color: #fff;
+    margin: 1rem 6rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 15px;
+    display: flex;
+    gap: 4rem;
+    padding: 1rem 3rem;
+    height: auto;
+}
 
         .h2-under-div-under-div {
             font-weight: 900;
@@ -198,6 +200,9 @@
             font-family: Vazir;
             cursor: pointer;
         }
+        .main-div > div:last-child {
+    flex: 1;
+}
 
         dialog::backdrop {
             background-color: rgba(0, 0, 0, 0.5);
@@ -258,13 +263,16 @@
             }
         }
 
-        .div-under-div-img {
-            background-color: #f8fafc;
-            display: flex;
-            align-items: center;
-            margin: 2rem 0;
-            border-radius: 15px;
-        }
+.div-under-div-img {
+    background-color: #f8fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    border-radius: 15px;
+    width: 25rem;
+    min-width: 25rem;
+}
 
         .star {
             color: #f59e0b;
@@ -281,9 +289,12 @@
         }
 
         .img-under-main-div {
-            margin: 0 1rem;
+            margin: 2rem 1rem;
             border-radius: 5px;
             transition: all 0.3s ease;
+            width: 94%;
+            min-width: 94%;
+            height: auto;
         }
 
         .div-div-main {
@@ -464,12 +475,8 @@
             margin-top: .5rem;
         }
 
-        .out-of-stock {
-            color: red;
-        }
-
         /* =========================
-   Tablet
+   Tablet / Laptop
 ========================= */
 
         @media (max-width: 1200px) {
@@ -484,13 +491,19 @@
                 margin-right: 3rem;
             }
 
+            .div-under-div-img {
+                width: 27rem;
+                min-width: 27rem;
+            }
+
             .img-under-main-div {
-                width: 25rem;
+                width: 22rem;
             }
 
             .button-for-buy {
                 padding-left: 6rem;
                 padding-right: 6rem;
+                text-wrap: nowrap;
             }
 
             .related {
@@ -513,7 +526,7 @@
    Mobile
 ========================= */
 
-        @media (max-width: 900px) {
+        @media (max-width: 960px) {
 
             header {
                 position: static;
@@ -558,7 +571,11 @@
             }
 
             .div-under-div-img {
+                width: 90%;
+                min-width: 90%;
+                max-width: 30rem;
                 margin: 1rem 0;
+                padding: 1rem;
             }
 
             .img-under-main-div {
@@ -578,6 +595,7 @@
             .button-for-buy {
                 width: 90%;
                 padding: .7rem;
+
             }
 
             .main-div-in-main {
@@ -618,7 +636,7 @@
    Small Mobile
 ========================= */
 
-        @media (max-width: 600px) {
+        @media (max-width: 650px) {
 
             header {
                 justify-content: center;
@@ -645,10 +663,19 @@
 
             .main-div {
                 margin: 1rem;
+                padding: .8rem;
+            }
+
+            .div-under-div-img {
+                width: 100%;
+                min-width: 100%;
+                max-width: 25rem;
+                padding: .8rem;
             }
 
             .img-under-main-div {
                 width: 18rem;
+                max-width: 100%;
             }
 
             .h2-under-div-under-div {
@@ -681,7 +708,7 @@
                 margin-right: 1rem;
             }
 
-            /* دو محصول در هر ردیف */
+            /* دو محصول محبوب در هر ردیف */
             .related-products {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 10px;
@@ -750,8 +777,14 @@
                 padding: .7rem;
             }
 
+            .div-under-div-img {
+                width: 100%;
+                padding: .5rem;
+            }
+
             .img-under-main-div {
                 width: 15rem;
+                max-width: 100%;
             }
 
             .button-for-buy {
@@ -773,7 +806,7 @@
                 margin-right: .7rem;
             }
 
-            /* همچنان دو محصول کنار هم */
+            /* حتی در گوشی خیلی کوچک هم ۲تایی */
             .related-products {
                 grid-template-columns: repeat(2, minmax(0, 1fr));
                 gap: 8px;
@@ -797,10 +830,6 @@
             }
         }
 
-
-        /* =========================
-   400 تا 600
-========================= */
 
         @media (max-width: 600px) and (min-width: 400px) {
 
@@ -836,6 +865,16 @@
             }
         }
 
+        .half-star {
+            background: linear-gradient(90deg, #f59e0b 50%, #cbd5e1 50%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .out-of-stock {
+            color: red;
+        }
+
         dialog button,
         dialog a {
             display: inline-flex;
@@ -856,13 +895,65 @@
             text-decoration: none;
             cursor: pointer;
         }
-        dialog p{
+                dialog p{
             line-height: 2;
         }
+
+#loading {
+        position: fixed;
+        inset: 0;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+
+        opacity: 1;
+    }
+
+    #loading.hide {
+        animation: fadeOut 0.4s ease forwards;
+    }
+
+    .loader {
+        width: 45px;
+        height: 45px;
+        border: 5px solid #e2e8f0;
+        border-top-color: #2563eb;
+        border-radius: 50%;
+        animation: spin 0.8s linear infinite;
+    }
+
+    #loading p {
+        margin-top: 15px;
+        color: #2563eb;
+        font-size: 1rem;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes fadeOut {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
+        }
+    }
+
     </style>
 </head>
 
-<body>
+<div id="loading">
+    <div class="loader"></div>
+    <p>در حال بارگذاری...</p>
+</div>
     <header>
         <div>
             <h1><span class="title1">A.R.Z toy</span><span class="title2">shop</span></h1>
@@ -883,7 +974,7 @@
             ←
             <a href="../../all/all products/"> محصولات</a>
             ←
-            کنسول بازی ۵۰۰ بازی
+            <span class="product-name"></span>
         </p>
         <div class="main-div">
             <div class="div-under-div-img">
@@ -891,8 +982,7 @@
             </div>
             <div>
                 <h2 class="h2-under-div-under-div product-name"></h2>
-                <p class="p-brother-of-h2">کنسول بازی جذاب با گیم‌پد شارژی و مجموعه‌ای از ۵۰۰ بازی متنوع و سرگرم‌کننده.
-                </p>
+                <p class="p-brother-of-h2 product-short-description"></p>
                 <div class="price-box">
                     <p class="second-p-under-price-box product-price"></p>
                 </div>
@@ -901,7 +991,6 @@
                     <button onclick="myDialog.showModal()" class="button-for-buy">
                         🛒 خرید محصول
                     </button>
-
                     <dialog id="myDialog">
                         <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
 
@@ -911,84 +1000,15 @@
                         <a href="tel:05133682848">تماس گرفتن</a>
                     </dialog>
                 </div>
-                <div class="i-need-grid-in-it">
-                    <div class="div-under-i-need-grid-in-it">
-                        <h6>🎮 تعداد بازی</h6>
-                        <p>۵۰۰ بازی متنوع</p>
-                    </div>
-                    <div class="div-under-i-need-grid-in-it">
-                        <h6>📺 اتصال</h6>
-                        <p>قابل اتصال به تلویزیون</p>
-                    </div>
-                    <div class="div-under-i-need-grid-in-it">
-                        <h6>🔋 کنترلر</h6>
-                        <p>شارژی</p>
-                    </div>
+                <div class="i-need-grid-in-it product-features">
                 </div>
             </div>
         </div>
         <div class="main-div-in-main">
             <h2 class="h2-under-main">توضیحات محصول</h2>
-            <p class="p-under-main">کنسول بازی ۵۰۰ بازی یک انتخاب جذاب برای علاقه‌مندان به بازی‌های کلاسیک و سرگرم‌کننده
-                است. این محصول دارای گیم‌پد شارژی بوده و مجموعه‌ای از بازی‌های متنوع را در اختیار شما قرار می‌دهد.</p>
+            <p class="p-under-main product-description"></p>
             <h3 class="h3-under-main">مشخصات محصول</h3>
-            <div class="div-div-main">
-                <div class="div-div-div-main">
-                    <h6>نوع محصول</h6>
-                    <p>کنسول بازی</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>نوع کنترلر</h6>
-                    <p>شارژی</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>خروجی ها</h6>
-                    <p>تلویزیون</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>تعداد بازی</h6>
-                    <p>۵۰۰ عدد</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>مناسب برای</h6>
-                    <p>کودکان و نوجوانان</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>تعداد دکمه</h6>
-                    <p>12 دکمه</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>ظرفیت</h6>
-                    <p>1020 میلی آمپر</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>باتری سازگار</h6>
-                    <p>لیتیومی</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>سایر توضیحات</h6>
-                    <p>دارای بازی داخلی, دارای ولوم صدا</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>درگاه کارت حافظه</h6>
-                    <p>ندارد</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>اندازه صفحه نمایش</h6>
-                    <p>3 اینچ</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>محتویات</h6>
-                    <p>کابل تصویر, کابل شارژر</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>صفحه‌نمایش لمسی</h6>
-                    <p>ندارد</p>
-                </div>
-                <div class="div-div-div-main">
-                    <h6>فضای ذخیره سازی</h6>
-                    <p>ندارد</p>
-                </div>
+            <div class="div-div-main product-specs">
             </div>
         </div>
         <section class="related" id="product">
@@ -1044,7 +1064,6 @@
     <p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
     <script type="module" src="../../js/products-data.js"></script>
     <script type="module" src="../../js/related-products.js"></script>
-
     <script>
         const searchInput = document.querySelector("#main-search-box");
 
@@ -1066,30 +1085,26 @@
 
         });
     </script>
-    <script type="module">
-        import { products } from "../../js/products-data.js";
+        <script type="module" src="../../js/product-jsonld.js"></script>
+        <script type="module" src="../../js/product-page2.js"></script>
 
-        const product = products.Game_console_with_500_games;
+<script>
+window.addEventListener("load", () => {
 
-        document.querySelector(".product-name").textContent = product.name;
+        setTimeout(() => {
 
-        document.querySelector(".product-price").textContent = product.price;
+            const loading = document.getElementById("loading");
 
-        document.querySelector(".product-image").src = product.image;
+            loading.classList.add("hide");
 
-        document.querySelector(".product-image").alt = product.name;
+            setTimeout(() => {
+                loading.remove();
+            }, 800);
 
-        document.querySelector(".product-Inventory").textContent = product.Inventory;
+        }, 1500);
 
-        const inventory = document.querySelector(".product-Inventory");
-
-        inventory.textContent = product.Inventory;
-
-        if (product.Inventory !== "✓ موجود در انبار") {
-            inventory.classList.add("out-of-stock");
-        }
-    </script>
-    <script type="module" src="../../js/product-jsonld.js"></script>
+    });
+</script>
 </body>
 
 </html>
