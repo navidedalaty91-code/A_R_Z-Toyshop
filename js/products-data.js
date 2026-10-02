@@ -1,11 +1,46 @@
 const products = {
+    dsfe8f45sd5c55sfe44f: {
+        name: "لگو کشتی کروز 2428 تکه",
+        price: "۸,۵۰۰,۰۰۰ تومان",
+        image: "../../images/2,428_Piece_Cruise_Ship_Lego_Set.jpg",
+        description: "یک کشتی بزرگ بساز! 🚢",
+        link: "../../products/product/?id=dsfe8f45sd5c55sfe44f",
+        category: ["educational","lego"],
+        Inventory: "✓ موجود در انبار",
+
+        // توضیح کوتاه زیر نام محصول
+        shortDescription:
+            "لگو کشتی کروز Zhe Gao با ۲۴۲۸ قطعه مینی، مناسب ساخت و دکور.",
+
+        // توضیحات کامل محصول
+        fullDescription:
+            "لگو کشتی کروز از برند Zhe Gao یک مجموعه ساختنی بزرگ و پرجزئیات با ۲۴۲۸ قطعه مینی است. این مدل پس از ساخت حدود ۴۹ سانتی‌متر طول دارد و با جزئیاتی مانند عرشه‌های چندطبقه، قایق‌های نجات، دودکش‌ها و جرثقیل طراحی شده است. این مجموعه علاوه بر سرگرمی ساخت، می‌تواند پس از تکمیل به عنوان یک مدل دکوراتیو و کلکسیونی مورد استفاده قرار گیرد.",
+
+        // کارت‌های ویژگی
+        features: [
+            { title: "🧩 تعداد قطعات", value: "۲۴۲۸ قطعه" },
+            { title: "🚢 نوع", value: "کشتی کروز" },
+            { title: "📏 طول محصول", value: "۴۹ حدود سانتی‌متر" }
+        ],
+
+        // مشخصات محصول
+        specs: [
+            { title: "برند", value: "Zhe Gao" },
+            { title: "نوع محصول", value: "لگو و ساختنی" },
+            { title: "تعداد قطعات", value: "۲۴۲۸ قطعه" },
+            { title: "جنس", value: "پلیمری" },
+            { title: "رده سنی", value: "بالای ۶ سال" },
+            { title: "اقلام همراه", value: "دفترچه راهنما و پایه نمایش" },
+            { title: "کاربرد", value: "ساختنی، سرگرمی و دکور" }
+        ]
+    },
     ed4554fe8dc54ec45xcd: {
         name: "لگو جیپ کنترلی 314 تکه",
         price: "۴,۶۰۰,۰۰۰ تومان",
         image: "../../images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
         description: "بساز، کنترل کن، لذت ببر! 🚙",
         link: "../../products/product/?id=ed4554fe8dc54ec45xcd",
-        category: "educational",
+        category: ["educational", "lego"],
         Inventory: "✓ موجود در انبار",
 
         // توضیح کوتاه زیر نام محصول

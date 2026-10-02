@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "لگو کشتی کروز 2428 تکه",
+        price: "۸,۵۰۰,۰۰۰ تومان",
+        image: "images/2,428_Piece_Cruise_Ship_Lego_Set.jpg",
+        link: "products/product/?id=dsfe8f45sd5c55sfe44f",
+    },
+    {
         name: "لگو جیپ کنترلی 314 تکه",
         price: "۴,۶۰۰,۰۰۰ تومان",
         image: "images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
