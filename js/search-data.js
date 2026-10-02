@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "ماکت موتور CB1300",
+        price: "۴,۶۰۰,۰۰۰ تومان",
+        image:"images/Die_cast_Honda_CB1300_model.jpg",
+        link: "products/product/?id=sdw48ds5d45d45w45d44",
+    },
+    {
         name: "ماشین کودک موزیکال",
         price: "۵,۰۰۰,۰۰۰ تومان",
         image: "images/Musical_baby_car_with_handle.jpg",

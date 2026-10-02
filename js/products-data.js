@@ -1,4 +1,69 @@
 const products = {
+    sdw48ds5d45d45w45d44: {
+        name: "ماکت موتور CB1300",
+        price: "۴,۶۰۰,۰۰۰ تومان",
+
+        images: [
+            "../../images/Die_cast_Honda_CB1300_model.jpg",
+            "../../images/Die_cast_Honda_CB1300_model2.jpg",
+        ],
+
+        description: "قدرت و زیبایی در یک ماکت! 🏍️",
+
+        link: "../../products/product/?id=sdw48ds5d45d45w45d44",
+
+        category: ["figure"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ماکت موتور CB1300 با بدنه تمام‌فلزی، جزئیات ساخت بالا و قابلیت حرکت فرمان و چرخ‌ها.",
+
+        fullDescription:
+            "ماکت موتور CB1300 با طراحی زیبا و بدنه تمام‌فلزی، مناسب علاقه‌مندان به موتور و کلکسیونرها 🏍️ فرمان و چرخ‌ها قابلیت حرکت دارند و دو جک نگهدارنده، امکان قرارگیری بهتر ماکت را فراهم می‌کنند. این ماکت با طول حدود ۱۸ سانتی‌متر و ارتفاع حدود ۱۱ سانتی‌متر، همراه با جعبه عرضه می‌شود.",
+
+        features: [
+            {
+                title: "🏍️ مدل",
+                value: "CB1300"
+            },
+            {
+                title: "🔩 جنس",
+                value: "تمام فلزی"
+            },
+            {
+                title: "⚙️ قابلیت حرکتی",
+                value: "حرکت فرمان و چرخ‌ها"
+            },
+        ],
+
+        specs: [
+            {
+                title: "مدل",
+                value: "CB1300"
+            },
+            {
+                title: "جنس",
+                value: "تمام فلزی"
+            },
+            {
+                title: "طول",
+                value: "حدود ۱۸ سانتی‌متر"
+            },
+            {
+                title: "ارتفاع",
+                value: "حدود ۱۱ سانتی‌متر"
+            },
+            {
+                title: "جک نگهدارنده",
+                value: "۲ عدد"
+            },
+            {
+                title: "قابلیت حرکت",
+                value: "فرمان و چرخ‌ها"
+            },
+        ]
+    },
     wdxs54dw4s6d5e64ds1s: {
         name: "ماشین کودک موزیکال",
         price: "۵,۰۰۰,۰۰۰ تومان",
@@ -62,7 +127,7 @@ const products = {
         features: [
             { title: "🧩 تعداد قطعات", value: "۲۴۲۸ قطعه" },
             { title: "🚢 نوع", value: "کشتی کروز" },
-           { title: "📏 طول محصول", value: "حدود ۴۹ سانتی‌متر" }
+            { title: "📏 طول محصول", value: "حدود ۴۹ سانتی‌متر" }
         ],
 
         // مشخصات محصول
@@ -82,7 +147,7 @@ const products = {
         image: "../../images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
         description: "بساز، کنترل کن، لذت ببر! 🚙",
         link: "../../products/product/?id=ed4554fe8dc54ec45xcd",
-        category: ["educational", "lego","remote"],
+        category: ["educational", "lego", "remote"],
         Inventory: "✓ موجود در انبار",
 
         // توضیح کوتاه زیر نام محصول
@@ -994,7 +1059,7 @@ const products = {
     fse6rf45e4g8v454v5vd: {
         name: "کنسول بازی ۵۰۰ بازی",
         price: "۳,۰۰۰,۰۰۰ تومان",
-        images: ["../../images/photo_2026-09-13_22-49-28.jpg","../../images/photo_2026-09-13_22-49-28_2.jpg"],
+        images: ["../../images/photo_2026-09-13_22-49-28.jpg", "../../images/photo_2026-09-13_22-49-28_2.jpg"],
         description: "گیم‌پد شارژی با ۵۰۰ بازی متنوع 🎮",
         link: "../../products/product/?id=fse6rf45e4g8v454v5vd",
         category: ["console", "digital"],
