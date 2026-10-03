@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "تریلی کانتینربر کنترلی شارژی",
+        price: "۱۲,۸۰۰,۰۰۰ تومان",
+        image: "images/EE_Brand_Rechargeable_Remote_Controlled_Semi_Truck.jpg",
+        link: "products/product/?id=ssdmksxxs556sxksksxd",
+    },
+    {
         name: "ست پیست اسکیت و دوچرخه",
         price: "۲,۸۸۰,۰۰۰  تومان",
         image: "images/Bicycle_and_skating_track_with_equipment.jpg",
