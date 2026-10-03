@@ -1,5 +1,11 @@
 const searchProducts = [
     {
+        name: "ربات‌ کنترلی بوکس و فوتبال",
+        price: "۸,۸۰۰,۰۰۰ تومان",
+        image: "images/Rechargeable_remote_controlled_boxing_robots_for_two_players.jpg",
+        link: "products/product/?id=sdikwoksodskldkowsoh",
+    },
+    {
         name: "تریلی کانتینربر کنترلی شارژی",
         price: "۱۲,۸۰۰,۰۰۰ تومان",
         image: "images/EE_Brand_Rechargeable_Remote_Controlled_Semi_Truck.jpg",

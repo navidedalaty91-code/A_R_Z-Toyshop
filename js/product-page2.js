@@ -501,7 +501,53 @@ const productImages = product.images || [product.image];
 image.src = productImages[0];
 image.alt = product.name;
 
+// بزرگنمایی تصویر محصول
+const imageModal = document.querySelector("#imageModal");
+const modalProductImage = document.querySelector("#modalProductImage");
+const imageModalClose = document.querySelector(".image-modal-close");
 
+
+// کلیک روی تصویر اصلی
+image.addEventListener("click", () => {
+
+    modalProductImage.src = image.src;
+    modalProductImage.alt = image.alt;
+
+    imageModal.classList.add("show");
+
+});
+
+
+// بستن با ضربدر
+imageModalClose.addEventListener("click", () => {
+
+    imageModal.classList.remove("show");
+
+});
+
+
+// بستن با کلیک روی فضای تاریک
+imageModal.addEventListener("click", (event) => {
+
+    if (event.target === imageModal) {
+
+        imageModal.classList.remove("show");
+
+    }
+
+});
+
+
+// بستن با دکمه Escape
+document.addEventListener("keydown", (event) => {
+
+    if (event.key === "Escape") {
+
+        imageModal.classList.remove("show");
+
+    }
+
+});
 // اگر قسمت تصاویر کوچک وجود داشت
 if (thumbnailsContainer) {
 

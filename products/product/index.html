@@ -1002,6 +1002,76 @@
             }
 
         }
+        /* =========================
+   بزرگ‌نمایی تصویر محصول
+========================= */
+
+.image-modal {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    padding: 2rem;
+}
+
+.image-modal.show {
+    display: flex;
+}
+
+#modalProductImage {
+    max-width: 90vw;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    animation: imageZoom .25s ease;
+}
+
+.image-modal-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 3rem;
+    font-weight: 400;
+    cursor: pointer;
+    line-height: 1;
+    z-index: 2;
+}
+
+@keyframes imageZoom {
+    from {
+        opacity: 0;
+        transform: scale(.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 650px) {
+
+    .image-modal {
+        padding: 1rem;
+    }
+
+    #modalProductImage {
+        max-width: 95vw;
+        max-height: 85vh;
+    }
+
+    .image-modal-close {
+        top: 15px;
+        right: 20px;
+        font-size: 2.5rem;
+    }
+}
     </style>
 </head>
 
@@ -1083,6 +1153,10 @@
 
     </section>
 </main>
+<div id="imageModal" class="image-modal">
+    <span class="image-modal-close">&times;</span>
+    <img id="modalProductImage" src="" alt="">
+</div>
 <footer class="footer" id="footer">
     <div class="main-div-in-footer">
         <div>
