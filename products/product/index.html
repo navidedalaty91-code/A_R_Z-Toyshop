@@ -1074,6 +1074,8 @@
 }
     </style>
 </head>
+<body>
+    
 
 <div id="loading">
     <div class="loader"></div>
@@ -1175,7 +1177,7 @@
             <h6 class="footer-head">ارتباط با ما</h6>
             <a href="tel:05133682848" style="text-decoration: none;color: #fff">تلفن: 05133682848</a>
             <div class="social-icons">
-                <a href="https://www.instagram.com/arz_toys?stkn=MTI5OXJsMmo5ZjV4Yw==">
+                <a href="https://www.instagram.com/arz.toys?utm_source=qr&stkn=NWV2bDA0a3M2MG1j">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon1" width="30" height="30" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round">
@@ -1200,25 +1202,19 @@
 <script type="module" src="../../js/products-data.js"></script>
 <script type="module" src="../../js/related-products.js"></script>
 <script>
-    const searchInput = document.querySelector("#main-search-box");
+const searchBox = document.getElementById("main-search-box");
 
-    searchInput.addEventListener("keydown", function (event) {
+searchBox.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        const searchValue = searchBox.value.trim();
 
-        if (event.key === "Enter") {
-
-            const searchValue = searchInput.value.trim();
-
-            if (searchValue !== "") {
-
-                window.location.href =
-                    "../../search.html?search=" +
-                    encodeURIComponent(searchValue);
-
-            }
-
+        if (searchValue !== "") {
+            window.location.href =
+                "../../all/all products/?search=" +
+                encodeURIComponent(searchValue);
         }
-
-    });
+    }
+});
 </script>
 <script type="module" src="../../js/product-jsonld.js"></script>
 <script type="module" src="../../js/product-page2.js"></script>

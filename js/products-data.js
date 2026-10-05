@@ -1,40 +1,401 @@
 const products = {
-        robot_boxing_soccer: {
-    name: "ربات‌ کنترلی بوکس و فوتبال",
-    price: "۸,۸۰۰,۰۰۰ تومان",
-    image: "../../images/Rechargeable_remote_controlled_boxing_robots_for_two_players.jpg",
-    description: "دو ربات، یک میدان رقابت! 🤖⚽",
-    link: "../../products/product/?id=robot_boxing_soccer",
-    category: ["remote", "sport", "educational"],
-    Inventory: "✓ موجود در انبار",
+    sdsd5d45w4d1xcs5d45w: {
+        name: "تفنگ تیرژله‌ای گاتلینگ",
+        price: "قیمت را وارد کنید",
 
-    shortDescription:
-        "ست دو ربات کنترلی با قابلیت بازی بوکس و فوتبال، حرکت ۳۶۰ درجه، کنترل بی‌سیم ۲.۴ گیگاهرتز و باتری‌های قابل شارژ USB.",
+        image: "../../images/Rechargeable_double_barrel_rapid_fire_gel_bead_blaster.jpg",
 
-    fullDescription:
-        "این ست ربات‌های کنترلی یک بازی دونفره جذاب را با ترکیب مسابقه بوکس و فوتبال ارائه می‌دهد. 🤖" +
-        "هر ربات با کنترل بی‌سیم ۲.۴ گیگاهرتز هدایت می‌شود و قابلیت حرکت چندجهته و چرخش ۳۶۰ درجه دارد." +
-        "باتری‌های قابل شارژ USB نیز استفاده از ربات‌ها را راحت‌تر می‌کنند و وجود توپ و دروازه‌ها امکان بازی فوتبال را در کنار حالت مبارزه فراهم می‌کند.",
 
-    features: [
-        { title: "🤖 تعداد ربات", value: "۲ عدد" },
-        { title: "🎮 کنترل", value: "کنترل از راه دور" },
-        { title: "🔄 حرکت", value: "چندجهته و چرخش ۳۶۰ درجه" },
-    ],
+        description: "🎮 طراحی خاص و ظاهر جذاب!",
 
-    specs: [
-        { title: "نوع محصول", value: "ست ربات کنترلی دونفره" },
-        { title: "تعداد ربات", value: "۲ عدد" },
-        { title: "نوع کنترل", value: "بی‌سیم" },
-        { title: "حرکت", value: "۳۶۰ درجه و چندجهته" },
-        { title: "حالت بازی", value: "بوکس و فوتبال" },
-        { title: "منبع انرژی", value: "باتری قابل شارژ" },
-        { title: "روش شارژ", value: "USB" },
-        { title: "توپ فوتبال", value: "دارد" },
-        { title: "دروازه", value: "دارد" },
-        { title: "جنس", value: "پلاستیک ABS" }
-    ]
-},
+        link: "../../products/product/?id=sdsd5d45w4d1xcs5d45w",
+
+        category: ["action", "toy"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "تفنگ تیرژله‌ای گاتلینگ با طراحی دو لول، افکت نوری و بدنه مقاوم، همراه با عینک محافظ و اقلام جانبی.",
+
+        fullDescription:
+            "تفنگ تیرژله‌ای گاتلینگ با طراحی دو لول و ظاهر متفاوت، یکی از مدل‌های خاص اسباب‌بازی‌های تیرژله‌ای است. " +
+            "این محصول دارای افکت‌های نوری و بدنه‌ای از جنس پلاستیک ABS است و همراه با برخی لوازم جانبی عرضه می‌شود. " +
+            "برای استفاده ایمن، از شلیک به سمت صورت، چشم‌ها و حیوانات خودداری شود و هنگام بازی از تجهیزات محافظ موجود در بسته استفاده شود.",
+
+        features: [
+            {
+                title: "🔫 طراحی",
+                value: "طراحی گاتلینگ با دو لول"
+            },
+            {
+                title: "💡 افکت",
+                value: "دارای افکت نوری"
+            },
+            {
+                title: "🔋 منبع انرژی",
+                value: "باتری قابل شارژ"
+            },
+        ],
+
+        specs: [
+            {
+                title: "نوع محصول",
+                value: "تفنگ اسباب‌بازی تیرژله‌ای"
+            },
+            {
+                title: "طراحی",
+                value: "دو لول با ظاهر گاتلینگ"
+            },
+            {
+                title: "جنس بدنه",
+                value: "پلاستیک ABS"
+            },
+            {
+                title: "نوع تیر",
+                value: "تیر ژله‌ای"
+            },
+            {
+                title: "منبع انرژی",
+                value: "باتری قابل شارژ"
+            },
+            {
+                title: "محتویات بسته",
+                value: "عینک محافظ و اقلام جانبی"
+            },
+        ]
+    },
+    gf4g654e6r4g65f6g465: {
+        name: "ماشین کنترلی تسلا سایبرتراک",
+        price: "۲۳,۸۰۰,۰۰۰ تومان",
+        images: [
+            "../../images/MZ_Brand_Rechargeable_Remote_Controlled_Tesla_Car.webp",
+            "../../images/MZ_Brand_Rechargeable_Remote_Controlled_Tesla_Car2.webp",
+            "../../images/MZ_Brand_Rechargeable_Remote_Controlled_Tesla_Car3.webp"
+        ],
+
+        description: "🚙 آماده برای فتح مسیرهای سخت!",
+
+        link: "../../products/product/?id=gf4g654e6r4g65f6g465",
+
+        category: ["remote", "vehicle"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ماشین کنترلی آفرود تسلا سایبرتراک با سیستم چهارچرخ محرک، کمک‌فنر قوی، چرخ‌های لاستیکی و چراغ LED، مناسب برای حرکت در مسیرهای مختلف.",
+
+        fullDescription:
+            "با ماشین کنترلی آفرود تسلا سایبرتراک، هیجان رانندگی را به دنیای بازی بیاورید! 🚙🔥" +
+            "این مدل با سیستم چهارچرخ محرک (4WD)، کمک‌فنرهای قوی و چرخ‌های لاستیکی با چسبندگی بالا طراحی شده و می‌تواند روی سطوحی مانند چمن، شن، گل و مسیرهای سنگی حرکت کند." +
+            "ریموت کنترل ۲.۴ گیگاهرتزی، چراغ‌های LED ، این ماشین را به گزینه‌ای جذاب برای علاقه‌مندان به ماشین‌های کنترلی آفرود تبدیل کرده است.",
+
+        features: [
+            {
+                title: "🚙 نوع",
+                value: "ماشین کنترلی آفرود تسلا سایبرتراک"
+            },
+            {
+                title: "⚙️ سیستم حرکتی",
+                value: "چهارچرخ محرک (4WD)"
+            },
+            {
+                title: "🔋 منبع انرژی",
+                value: "باتری قابل شارژ"
+            }
+        ],
+
+        specs: [
+            {
+                title: "نوع محصول",
+                value: "ماشین کنترلی آفرود"
+            },
+            {
+                title: "جنس بدنه",
+                value: "فلز و پلاستیک ABS"
+            },
+            {
+                title: "ابعاد ماشین",
+                value: "۴۶ × ۲۶ × ۲۵.۵ سانتی‌متر"
+            },
+            {
+                title: "سیستم حرکتی",
+                value: "چهارچرخ محرک (4WD)"
+            },
+            {
+                title: "ریموت کنترل",
+                value: "۲.۴ گیگاهرتز"
+            },
+            {
+                title: "کمک‌فنر",
+                value: "دارای کمک‌فنر قوی"
+            },
+            {
+                title: "سطوح قابل حرکت",
+                value: "چمن، شن، گل و مسیرهای سنگی"
+            },
+            {
+                title: "قابلیت شیب",
+                value: "حرکت روی شیب تا حدود ۴۵ درجه"
+            },
+            {
+                title: "چراغ",
+                value: "چراغ LED"
+            },
+            {
+                title: "منبع انرژی",
+                value: "باتری قابل شارژ"
+            },
+            {
+                title: "مناسب برای",
+                value: "کودکان ۸ سال به بالا"
+            }
+        ]
+    },
+    esd45w68d45s65d4w654: {
+        name: "ربات بازلایتر کنترلی سری 5",
+        price: "۴,۸۸۰,۰۰۰ تومان",
+        image: "../../images/Musical_Buzz_Lightyear_Robot_toy_story_5.webp",
+
+        description: "🚀 بازلایتر آماده مأموریت!",
+
+        link: "../../products/product/?id=esd45w68d45s65d4w654",
+
+        category: ["action", "digital", "figure"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ربات بازلایتر کنترلی موزیکال با قابلیت حرکت در جهات مختلف، حرکات نمایشی، نور و صدا و شارژ با کابل USB، مناسب کودکان بالای ۳ سال.",
+
+        fullDescription:
+            "با ربات بازلایتر، یک ماجراجویی هیجان‌انگیز را به اتاق بازی کودک بیاورید! 🚀🤖" +
+            "این ربات کنترلی قابلیت حرکت به جلو، عقب، چپ و راست، اسلاید و چرخش دارد و با پخش موزیک و نور، حرکات نمایشی جذابی انجام می‌دهد." +
+            "ربات دارای باتری قابل شارژ است و از طریق کابل USB شارژ می‌شود. بال‌های پشت ربات نیز قابلیت باز و بسته شدن دارند و کنترل از راه دور آن امکانات مختلفی مانند موزیک، نور، صدا و توقف را در اختیار کودک قرار می‌دهد.",
+
+        features: [
+            {
+                title: "🤖 نوع",
+                value: "ربات بازلایتر کنترلی"
+            },
+            {
+                title: "🎮 کنترل",
+                value: "کنترل از راه دور"
+            },
+            {
+                title: "🔋 منبع انرژی",
+                value: "باتری قابل شارژ"
+            }
+        ],
+
+        specs: [
+            {
+                title: "نوع محصول",
+                value: "ربات اسباب‌بازی کنترلی"
+            },
+            {
+                title: "مدل",
+                value: "بازلایتر سری 5"
+            },
+            {
+                title: "ارتفاع",
+                value: "حدود ۲۶ سانتی‌متر"
+            },
+            {
+                title: "کنترل",
+                value: "کنترل از راه دور"
+            },
+            {
+                title: "حرکت",
+                value: "جلو، عقب، چپ، راست، اسلاید و چرخش"
+            },
+            {
+                title: "قابلیت‌ها",
+                value: "موزیک، نور، صدا و حرکات نمایشی"
+            },
+            {
+                title: "بال‌ها",
+                value: "قابلیت باز و بسته شدن"
+            },
+            {
+                title: "منبع انرژی",
+                value: "باتری قابل شارژ"
+            },
+            {
+                title: "شارژ",
+                value: "از طریق کابل USB"
+            },
+            {
+                title: "اقلام همراه",
+                value: "کابل شارژ USB"
+            },
+            {
+                title: "مناسب برای",
+                value: "کودکان بالای ۳ سال"
+            }
+        ]
+    },
+    red6f646e5r4f4dvcf45: {
+        name: "ست قابلمه و ماهیتابه فلزی",
+        price: "۳,۴۸۰,۰۰۰ تومان",
+        image: "../../images/Complete_set_of_imported_stainless_steel_pots.webp",
+
+        description: "🍳 آشپزی کوچولوها شروع شد!",
+
+        link: "../../products/product/?id=red6f646e5r4f4dvcf45",
+
+        category: ["educational"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ست آشپزخانه کودک شامل ۱۳ قطعه از ظروف و لوازم آشپزی، مناسب کودکان بالای ۳ سال برای بازی‌های خلاقانه، آشپزی و نقش‌آفرینی.",
+
+        fullDescription:
+            "با این ست آشپزخانه جذاب، کودک می‌تواند یک آشپزخانه کوچک و دوست‌داشتنی برای بازی‌های خود داشته باشد! 🍳👩‍🍳" +
+            "این مجموعه شامل قابلمه‌های دارای در، کاسه، آبکش، ماهیتابه و انواع لوازم آشپزی است و پیش‌بند و دستکش آشپزخانه نیز دارد." +
+            "این محصول برای کودکان بالای ۳ سال طراحی شده و می‌تواند در بازی‌های نقش‌آفرینی به تقویت خلاقیت، تخیل و مهارت‌های اجتماعی کودک کمک کند.",
+
+        features: [
+            {
+                title: "🍳 نوع",
+                value: "ست قابلمه و ماهیتابه آشپزخانه کودک"
+            },
+            {
+                title: "🔢 تعداد",
+                value: "۱۳ تکه"
+            },
+            {
+                title: "👧 مناسب برای",
+                value: "کودکان بالای ۳ سال"
+            }
+        ],
+
+        specs: [
+            {
+                title: "نوع محصول",
+                value: "ست لوازم آشپزخانه کودک"
+            },
+            {
+                title: "تعداد",
+                value: "۱۳ تکه"
+            },
+            {
+                title: "جنس",
+                value: "فلز و پارچه"
+            },
+            {
+                title: "اقلام",
+                value: "قابلمه، ماهیتابه، کاسه، آبکش و لوازم آشپزی"
+            },
+            {
+                title: "لوازم جانبی",
+                value: "پیش‌بند و دستکش آشپزخانه"
+            },
+            {
+                title: "مناسب برای",
+                value: "کودکان بالای ۳ سال"
+            },
+            {
+                title: "کاربرد",
+                value: "بازی، آشپزی کودک و نقش‌آفرینی"
+            }
+        ]
+    },
+    edffe87fc4d5f4444e55: {
+        name: "چایخوری فلزی کودک",
+        price: "۳,۴۸۰,۰۰۰ تومان",
+        image: "../../images/Complete_metal_tea_set_teapot_and_cups.webp",
+
+        description: "☕ وقتِ چای و خاله‌بازی!",
+
+        link: "../../products/product/?id=edffe87fc4d5f4444e55",
+
+        category: ["educational"],
+
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ست چایخوری فلزی کودک با طراحی رنگارنگ، شامل قوری، فنجان و نعلبکی، مناسب بازی‌های خلاقانه، مهمانی و نقش‌آفرینی کودکان.",
+
+        fullDescription:
+            "با این ست چایخوری فلزی، کودک می‌تواند دنیای کوچکی از مهمانی و پذیرایی را در بازی‌های خود بسازد! ☕🌸" +
+            "این مجموعه شامل قوری، فنجان‌ها و نعلبکی‌ها با طراحی زیبا و رنگارنگ است و برای بازی‌های خاله‌بازی، پذیرایی و نقش‌آفرینی بسیار مناسب است." +
+            "بازی‌های نقش‌آفرینی با این محصول می‌تواند به تقویت خلاقیت، تخیل و مهارت‌های اجتماعی کودک کمک کند.",
+
+        features: [
+            {
+                title: "☕ نوع",
+                value: "ست چایخوری فلزی"
+            },
+            {
+                title: "🌸 طراحی",
+                value: "طرح گل و میوه"
+            },
+            {
+                title: "👧 مناسب برای",
+                value: "بازی‌های نقش‌آفرینی"
+            }
+        ],
+
+        specs: [
+            {
+                title: "نوع محصول",
+                value: "ست چایخوری فلزی کودک"
+            },
+            {
+                title: "جنس",
+                value: "فلزی"
+            },
+            {
+                title: "اقلام",
+                value: "قوری، فنجان و نعلبکی"
+            },
+            {
+                title: "طراحی",
+                value: "رنگارنگ با طرح گل و میوه"
+            },
+            {
+                title: "کاربرد",
+                value: "خاله‌بازی، نقش‌آفرینی"
+            }
+        ]
+    },
+    sdikwoksodskldkowsoh: {
+        name: "ربات‌ کنترلی بوکس و فوتبال",
+        price: "۸,۸۰۰,۰۰۰ تومان",
+        image: "../../images/Rechargeable_remote_controlled_boxing_robots_for_two_players.jpg",
+        description: "دو ربات، یک میدان رقابت! 🤖⚽",
+        link: "../../products/product/?id=sdikwoksodskldkowsoh",
+        category: ["remote", "sport", "educational"],
+        Inventory: "✓ موجود در انبار",
+
+        shortDescription:
+            "ست دو ربات کنترلی با قابلیت بازی بوکس و فوتبال، حرکت ۳۶۰ درجه، کنترل بی‌سیم ۲.۴ گیگاهرتز و باتری‌های قابل شارژ USB.",
+
+        fullDescription:
+            "این ست ربات‌های کنترلی یک بازی دونفره جذاب را با ترکیب مسابقه بوکس و فوتبال ارائه می‌دهد. 🤖" +
+            "هر ربات با کنترل بی‌سیم ۲.۴ گیگاهرتز هدایت می‌شود و قابلیت حرکت چندجهته و چرخش ۳۶۰ درجه دارد." +
+            "باتری‌های قابل شارژ USB نیز استفاده از ربات‌ها را راحت‌تر می‌کنند و وجود توپ و دروازه‌ها امکان بازی فوتبال را در کنار حالت مبارزه فراهم می‌کند.",
+
+        features: [
+            { title: "🤖 تعداد ربات", value: "۲ عدد" },
+            { title: "🎮 کنترل", value: "کنترل از راه دور" },
+            { title: "🔄 حرکت", value: "چندجهته و چرخش ۳۶۰ درجه" },
+        ],
+
+        specs: [
+            { title: "نوع محصول", value: "ست ربات کنترلی دونفره" },
+            { title: "تعداد ربات", value: "۲ عدد" },
+            { title: "نوع کنترل", value: "بی‌سیم" },
+            { title: "حرکت", value: "۳۶۰ درجه و چندجهته" },
+            { title: "حالت بازی", value: "بوکس و فوتبال" },
+            { title: "منبع انرژی", value: "باتری قابل شارژ" },
+            { title: "روش شارژ", value: "USB" },
+            { title: "توپ فوتبال", value: "دارد" },
+            { title: "دروازه", value: "دارد" },
+            { title: "جنس", value: "پلاستیک ABS" }
+        ]
+    },
     ssdmksxxs556sxksksxd: {
         name: "تریلی کانتینربر کنترلی شارژی",
         price: "۱۲,۸۰۰,۰۰۰ تومان",
@@ -166,6 +527,7 @@ const products = {
         images: [
             "../../images/Die_cast_Honda_CB1300_model.jpg",
             "../../images/Die_cast_Honda_CB1300_model2.jpg",
+            "../../images/Die_cast_Honda_CB1300_model3.webp",
         ],
 
         description: "قدرت و زیبایی در یک ماکت! 🏍️",
@@ -228,6 +590,7 @@ const products = {
         name: "ماشین کودک موزیکال",
         price: "۵,۰۰۰,۰۰۰ تومان",
         images: [
+            "../../images/Musical_baby_car_with_handle3.webp",
             "../../images/Musical_baby_car_with_handle.jpg",
             "../../images/Musical_baby_car_with_handle2.jpg"
         ],
@@ -261,7 +624,7 @@ const products = {
             { title: "نحوه کنترل و فرمان", value: "اهرم هدایت فرمان" },
             { title: "تنظیم اهرم فرمان", value: "قابل تنظیم در ۲ ارتفاع" },
             { title: "امکانات ایمنی", value: "محافظ صندلی" },
-            { title: "رده سنی", value: "۲ تا ۵ سال" },
+            { title: "رده سنی", value: "1 تا 4 سال" },
             { title: "ظرفیت وزنی", value: "۲۰ کیلوگرم" },
             { title: "ویژگی نوری", value: "ندارد" }
         ]
@@ -307,7 +670,7 @@ const products = {
         image: "../../images/313_Piece_Remote_Controlled_Car_LEGO_Set.jpg",
         description: "بساز، کنترل کن، لذت ببر! 🚙",
         link: "../../products/product/?id=ed4554fe8dc54ec45xcd",
-        category: ["educational", "lego", "remote"],
+        category: ["educational", "lego", "remote", "vehicle"],
         Inventory: "✓ موجود در انبار",
 
         // توضیح کوتاه زیر نام محصول
@@ -339,7 +702,10 @@ const products = {
     ds45d454e54d5x4cscsx: {
         name: "موتور کودک مدل وسپی",
         price: "۳,۲۵۰,۰۰۰ تومان",
-        image: "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg",
+        images: [
+            "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights2.webp",
+            "../../images/Musical_Vespa_style_ride_on_motorcycle_with_working_lights.jpg"
+        ],
         description: "یک موتور کوچولو، کلی ماجرا! 🏍️",
         link: "../../products/product/?id=ds45d454e54d5x4cscsx",
         category: ["sport", "digital"],
@@ -636,8 +1002,10 @@ const products = {
 
         price: "۶,۶۰۰,۰۰۰ تومان",
 
-        image: "../../images/Light_up_musical_Turbo_scooter.jpg",
-
+        images: [
+            "../../images/Light_up_musical_Turbo_scooter2.jpg",
+            "../../images/Light_up_musical_Turbo_scooter.jpg",
+        ],
         description: "بازی کن، حرکت کن! 🛴",
 
         link: "../../products/product/?id=sd56v4cx321fs65df4sc",
@@ -1532,7 +1900,7 @@ const products = {
         ]
     },
     fd454rf1de45wr9f44re: {
-        name: "ربات بازلایتر موزیکال",
+        name: "ربات بازلایتر موزیکال سری 4",
         price: "۲,۸۰۰,۰۰۰ تومان",
         image: "../../images/Musical_Buzz_Lightyear_Robot.jpg",
         description: "به سوی بی‌نهایت و فراتر از آن! 🤖",

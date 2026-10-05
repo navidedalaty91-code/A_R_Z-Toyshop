@@ -279,16 +279,27 @@ window.addEventListener(
     checkScroll
 );
 
-// دریافت دسته بندی از URL
+// دریافت فیلترها از URL
 const urlParams = new URLSearchParams(window.location.search);
 
 const categoryFromURL = urlParams.get("category");
+const searchFromURL = urlParams.get("search");
 
 
-// اگر دسته بندی از URL آمده باشد
+// دریافت دسته‌بندی از URL
 if (categoryFromURL) {
-
     categoryFilter.value = categoryFromURL;
+}
+
+
+// دریافت عبارت جستجو از URL
+if (searchFromURL) {
+    searchInput.value = searchFromURL;
+}
+
+
+// اجرای فیلترها
+if (categoryFromURL || searchFromURL) {
 
     applyFilters();
 

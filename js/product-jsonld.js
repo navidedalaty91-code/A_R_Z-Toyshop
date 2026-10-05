@@ -1,92 +1,75 @@
 import { products } from "./products-data.js";
 
-// صبر تا تمام صفحه و منابع آن کاملاً لود شوند
-window.addEventListener("load", () => {
+const params = new URLSearchParams(window.location.search);
+const productId = params.get("id");
 
-    // پیدا کردن محصول بر اساس آدرس صفحه
-    const currentPath = decodeURIComponent(window.location.pathname);
+const product = products[productId];
 
-    const product = Object.values(products).find(item => {
+if (product) {
+    const productUrl = new URL(window.location.href);
+    productUrl.search = `?id=${encodeURIComponent(productId)}`;
 
-        const productPath =
-            new URL(item.link, window.location.origin).pathname;
+    const productImages = product.images || product.image;
 
-        return productPath === currentPath;
-    });
+    const images = (Array.isArray(productImages)
+        ? productImages
+        : [productImages]
+    ).filter(Boolean)
+        .map(image => new URL(image, window.location.href).href);
 
-    if (!product) {
-        return;
-    }
-
-    // تبدیل اعداد فارسی به انگلیسی
-    function persianToEnglishNumbers(value) {
-
-        return value
+    const price = product.price
+        ? product.price
             .replace(/[۰-۹]/g, digit =>
-                "۰۱۲۳۴۵۶۷۸۹".indexOf(digit)
+                String("۰۱۲۳۴۵۶۷۸۹".indexOf(digit))
             )
-            .replace(/[٬،,]/g, "");
-    }
+            .replace(/[^\d]/g, "")
+        : "";
 
-    // تبدیل قیمت تومان به ریال
-    function getPriceInRial(price) {
-
-        const number = persianToEnglishNumbers(price)
-            .replace(/[^\d]/g, "");
-
-        return Number(number) * 10;
-    }
+    const priceInRial = price
+        ? String(Number(price) * 10)
+        : "";
 
     const jsonLd = {
-
         "@context": "https://schema.org",
-
         "@type": "Product",
 
         "name": product.name,
 
-        "description": product.description,
+        "description": product.fullDescription ||
+            product.shortDescription ||
+            product.description ||
+            "",
 
-        "image": [
-            new URL(
-                product.image,
-                window.location.href
-            ).href
-        ],
+        "image": images,
+
+        "sku": productId,
 
         "brand": {
             "@type": "Brand",
-            "name": "A.R.Z toyshop"
+            "name": "A.R.Z Toyshop"
         },
 
         "offers": {
-
             "@type": "Offer",
-
-            "url": window.location.href,
-
+            "url": productUrl.href,
             "priceCurrency": "IRR",
+            "price": priceInRial,
+            "availability": product.Inventory &&
+                product.Inventory.includes("موجود در انبار")
+                ? "https://schema.org/InStock"
+                : "https://schema.org/OutOfStock",
 
-            "price": getPriceInRial(product.price),
-
-            "availability":
-                product.Inventory === "✓ موجود در انبار"
-                    ? "https://schema.org/InStock"
-                    : "https://schema.org/OutOfStock"
+            "seller": {
+                "@type": "Organization",
+                "name": "A.R.Z Toyshop"
+            }
         }
     };
 
-    // ساخت تگ JSON-LD
     const script = document.createElement("script");
 
     script.type = "application/ld+json";
-
-    script.textContent = JSON.stringify(
-        jsonLd,
-        null,
-        2
-    );
+    script.textContent = JSON.stringify(jsonLd);
 
     document.head.appendChild(script);
-
-});
+}
