@@ -1,7 +1,7 @@
 const products = {
     sdsd5d45w4d1xcs5d45w: {
         name: "تفنگ تیرژله‌ای گاتلینگ",
-        price: "قیمت را وارد کنید",
+        price: "۸,۹۰۰,۰۰۰ تومان",
 
         image: "../../images/Rechargeable_double_barrel_rapid_fire_gel_bead_blaster.jpg",
 
@@ -10,7 +10,7 @@ const products = {
 
         link: "../../products/product/?id=sdsd5d45w4d1xcs5d45w",
 
-        category: ["action", "toy"],
+        category: ["action"],
 
         Inventory: "✓ موجود در انبار",
 
@@ -130,12 +130,8 @@ const products = {
                 value: "دارای کمک‌فنر قوی"
             },
             {
-                title: "سطوح قابل حرکت",
-                value: "چمن، شن، گل و مسیرهای سنگی"
-            },
-            {
-                title: "قابلیت شیب",
-                value: "حرکت روی شیب تا حدود ۴۵ درجه"
+                title: "شیب",
+                value: "حرکت روی شیب تا ۴۵ درجه"
             },
             {
                 title: "چراغ",
