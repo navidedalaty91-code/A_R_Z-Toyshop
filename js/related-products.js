@@ -2,7 +2,7 @@ import { products } from "./products-data.js";
 
 
 const popularProducts = [
-    "wds8jdi8wsjsi982sj2w",
+    "sdsd5d45w4d1xcs5d46",
     "mje8is3ur3883wiikdx3",
     "fdvdxvcew9rwoj3ee02e",
     "dpkpe3ed3k0edpwd33ed",
