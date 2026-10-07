@@ -663,7 +663,7 @@ if (specsContainer && product.specs) {
 }
 // عنوان صفحه
 document.title =
-    `A.R.Z toyshop | ${product.name}`;
+    `A.R.Z toys | ${product.name}`;
 const metaDescription = document.querySelector('meta[name="description"]');
 
 if (metaDescription) {
