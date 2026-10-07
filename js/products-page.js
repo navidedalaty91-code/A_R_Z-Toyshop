@@ -236,7 +236,8 @@ function applyFilters() {
             const productText =
                 normalizeText(
                     product.name + " " +
-                    product.description
+                    product.description + " " +
+                    (product.keywords || "")
                 );
 
 
