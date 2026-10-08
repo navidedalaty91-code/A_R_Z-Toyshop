@@ -132,7 +132,20 @@
             transition: 0.2s;
         }
 
+        #themeToggle {
+            border: none;
+            background: transparent;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 7px 9px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
 
+        #themeToggle:hover {
+            background-color: #f1f5f9;
+            transform: scale(1.08);
+        }
 
 
 
@@ -571,6 +584,110 @@
             color: #fff;
         }
 
+        body.dark-mode {
+            background: #0f172a;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode header {
+            background: rgba(30, 41, 59, 0.96);
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode nav a {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode nav a:hover {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .page-header h1 {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .page-header p {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .products-tools {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .search-box input,
+        body.dark-mode .category-filter {
+            background: #334155;
+            color: #f8fafc;
+            border-color: #475569;
+        }
+
+        body.dark-mode .search-box input::placeholder {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .search-box input:focus,
+        body.dark-mode .category-filter:focus {
+            background: #3f4d63;
+            border-color: #60a5fa;
+        }
+
+        body.dark-mode .product-card {
+            background: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .product-image {
+            background: #334155;
+        }
+
+        body.dark-mode .product-name {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .product-description {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .product-price {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .no-result {
+            background: #1e293b;
+            color: #94a3b8;
+        }
+
+        body.dark-mode .product-button {
+            background-color: #c09d12 ;
+        }
+
+        body.dark-mode .footer {
+            background-color: #414e7230;
+            border-top: 1px solid #6d707a30;
+        }
+
+        body.dark-mode .end-p {
+            background-color: #414e7230;
+        }
+
+        body.dark-mode #loading {
+            background-color: #0f172a;
+        }
+
+        body.dark-mode #loading p {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .loader {
+            border-color: #334155;
+            border-top-color: #2563eb;
+        }
+
+        body.dark-mode #themeToggle:hover {
+            background-color: #334155;
+        }
+
         /* ========================================
    DESKTOP
 ======================================== */
@@ -1002,62 +1119,63 @@
             }
 
         }
-#loading {
-        position: fixed;
-        inset: 0;
-        background-color: #fff;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        z-index: 99999;
 
-        opacity: 1;
-    }
+        #loading {
+            position: fixed;
+            inset: 0;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
 
-    #loading.hide {
-        animation: fadeOut 0.4s ease forwards;
-    }
-
-    .loader {
-        width: 45px;
-        height: 45px;
-        border: 5px solid #e2e8f0;
-        border-top-color: #2563eb;
-        border-radius: 50%;
-        animation: spin 0.8s linear infinite;
-    }
-
-    #loading p {
-        margin-top: 15px;
-        color: #2563eb;
-        font-size: 1rem;
-    }
-
-    @keyframes spin {
-        to {
-            transform: rotate(360deg);
-        }
-    }
-
-    @keyframes fadeOut {
-        from {
             opacity: 1;
         }
 
-        to {
-            opacity: 0;
+        #loading.hide {
+            animation: fadeOut 0.4s ease forwards;
         }
-    }
+
+        .loader {
+            width: 45px;
+            height: 45px;
+            border: 5px solid #e2e8f0;
+            border-top-color: #2563eb;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        #loading p {
+            margin-top: 15px;
+            color: #2563eb;
+            font-size: 1rem;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes fadeOut {
+            from {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
 
 <body>
-<div id="loading">
-    <div class="loader"></div>
-    <p>در حال بارگذاری...</p>
-</div>
+    <div id="loading">
+        <div class="loader"></div>
+        <p>در حال بارگذاری...</p>
+    </div>
 
     <!-- =========================
          HEADER
@@ -1066,12 +1184,15 @@
     <header>
 
         <a href="../../index.html" class="logo">
-            <span style="color: #f59e0b;">A.R.Z toy</span><span style="color: #2563eb;">shop</span>
+            <span style="color: #f59e0b;">A.R.Z</span><span style="color: #2563eb;"> toys</span>
+
         </a>
 
 
         <nav>
-
+            <button id="themeToggle" type="button" aria-label="تغییر تم">
+                🌙
+            </button>
             <a href="../../index.html">
                 خانه
             </a>
@@ -1088,7 +1209,10 @@
                 درباره ما
             </a>
 
+
         </nav>
+
+
 
     </header>
 
@@ -1141,7 +1265,7 @@
                 <option value="remote">
                     کنترلی
                 </option>
-                
+
                 <option value="vehicle">
                     ماشین
                 </option>
@@ -1243,23 +1367,24 @@
     <p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
     <script type="module" src="../../js/products-page.js?v=2"></script>
 
-<script>
-window.addEventListener("load", () => {
-
-        setTimeout(() => {
-
-            const loading = document.getElementById("loading");
-
-            loading.classList.add("hide");
+    <script>
+        window.addEventListener("load", () => {
 
             setTimeout(() => {
-                loading.remove();
-            }, 800);
 
-        }, 1500);
+                const loading = document.getElementById("loading");
 
-    });
-</script>
+                loading.classList.add("hide");
+
+                setTimeout(() => {
+                    loading.remove();
+                }, 800);
+
+            }, 1500);
+
+        });
+    </script>
+    <script src="../../js/theme.js"></script>
 </body>
 
 </html>

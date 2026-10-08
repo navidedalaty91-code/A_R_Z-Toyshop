@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>A.R.Z toyshop | فروشگاه اسباب‌بازی</title>
-<meta name="description" content="فروشگاه آنلاین A.R.Z toyshop؛ خرید انواع اسباب‌بازی، کنسول، اسباب‌بازی‌های کنترلی و محصولات سرگرمی.">
+    <title>A.R.Z toyshop | فروشگاه اسباب‌بازی</title>
+    <meta name="description"
+        content="فروشگاه آنلاین A.R.Z toyshop؛ خرید انواع اسباب‌بازی، کنسول، اسباب‌بازی‌های کنترلی و محصولات سرگرمی.">
 
     <meta name="robots" content="index, follow">
 
@@ -106,8 +107,23 @@
             transform: scale(1.05);
         }
 
+        #themeToggle {
+            border: none;
+            background: transparent;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 10px;
+            transition: 0.2s;
+        }
+
+        #themeToggle:hover {
+            background: #f1f5f9;
+            transform: scale(1.08);
+        }
+
         main {
-            margin-top: 8rem;
+            padding-top: 8rem;
         }
 
         .first-p-i-write a {
@@ -198,6 +214,7 @@
             padding: .5rem 10rem;
             font-family: Vazir;
             cursor: pointer;
+            transition: all 0.5s ease;
         }
 
         .main-div>div:last-child {
@@ -473,6 +490,168 @@
             align-items: center;
             justify-content: center;
             margin-top: .5rem;
+        }
+
+        /* =========================
+   DARK MODE
+========================= */
+
+        body.dark-mode {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode header {
+            background-color: #1e293b;
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode nav a {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode nav a:hover {
+            color: #60a5fa;
+        }
+
+        body.dark-mode #main-search-box {
+            background-color: #334155;
+            color: #f8fafc;
+        }
+
+        body.dark-mode #main-search-box::placeholder {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .main-div,
+        body.dark-mode .main-div-in-main {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .first-p-i-write {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .first-p-i-write a {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .h2-under-div-under-div,
+        body.dark-mode .h2-under-main,
+        body.dark-mode .h3-under-main {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .p-brother-of-h2,
+        body.dark-mode .p-under-main {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode .price-box {
+            background-color: #1e3a5f;
+        }
+
+        body.dark-mode .first-p-under-price-box {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .second-p-under-price-box {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .div-under-div-img {
+            background-color: #334155;
+        }
+
+        body.dark-mode .div-under-i-need-grid-in-it {
+            background-color: #334155;
+        }
+
+        body.dark-mode .div-under-i-need-grid-in-it h6 {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .div-under-i-need-grid-in-it p {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .div-div-div-main {
+            background-color: #334155;
+        }
+
+        body.dark-mode .div-div-div-main h6 {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .div-div-div-main p {
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .related h2 {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .related-card {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .related-card h3 {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .related-card p {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .product-thumbnail {
+            border-color: #475569;
+        }
+
+        body.dark-mode .footer {
+            background-color: #414e7230;
+            border-top: 1px solid #65697230;
+        }
+        body.dark-mode .button-for-buy {
+            background-color: #c09d12;
+            transition: 0.5s ease ;
+        }
+        .button-for-buy:hover{
+            transform: scale(1.05);
+        }
+        body.dark-mode .end-p {
+            background-color: #414e7230;
+        }
+
+        body.dark-mode .product-thumbnail.active {
+            border-color: #60a5fa;
+        }
+
+        body.dark-mode #themeToggle:hover {
+            background-color: #334155;
+        }
+
+        body.dark-mode #loading {
+            background-color: #0f172a;
+        }
+
+        body.dark-mode #loading p {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .loader {
+            border-color: #334155;
+            border-top-color: #2563eb;
+        }
+
+        body.dark-mode dialog {
+            background-color: #1e293b;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode dialog p {
+            color: #e2e8f0;
         }
 
         /* =========================
@@ -1002,240 +1181,246 @@
             }
 
         }
+
         /* =========================
    بزرگ‌نمایی تصویر محصول
 ========================= */
 
-.image-modal {
-    position: fixed;
-    inset: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    align-items: center;
-    justify-content: center;
-    z-index: 999999;
-    padding: 2rem;
-}
+        .image-modal {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 999999;
+            padding: 2rem;
+        }
 
-.image-modal.show {
-    display: flex;
-}
+        .image-modal.show {
+            display: flex;
+        }
 
-#modalProductImage {
-    max-width: 90vw;
-    max-height: 90vh;
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    animation: imageZoom .25s ease;
-}
+        #modalProductImage {
+            max-width: 90vw;
+            max-height: 90vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+            border-radius: 10px;
+            animation: imageZoom .25s ease;
+        }
 
-.image-modal-close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 3rem;
-    font-weight: 400;
-    cursor: pointer;
-    line-height: 1;
-    z-index: 2;
-}
+        .image-modal-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 3rem;
+            font-weight: 400;
+            cursor: pointer;
+            line-height: 1;
+            z-index: 2;
+        }
 
-@keyframes imageZoom {
-    from {
-        opacity: 0;
-        transform: scale(.8);
-    }
+        @keyframes imageZoom {
+            from {
+                opacity: 0;
+                transform: scale(.8);
+            }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-@media (max-width: 650px) {
+        @media (max-width: 650px) {
 
-    .image-modal {
-        padding: 1rem;
-    }
+            .image-modal {
+                padding: 1rem;
+            }
 
-    #modalProductImage {
-        max-width: 95vw;
-        max-height: 85vh;
-    }
+            #modalProductImage {
+                max-width: 95vw;
+                max-height: 85vh;
+            }
 
-    .image-modal-close {
-        top: 15px;
-        right: 20px;
-        font-size: 2.5rem;
-    }
-}
+            .image-modal-close {
+                top: 15px;
+                right: 20px;
+                font-size: 2.5rem;
+            }
+        }
     </style>
 </head>
+
 <body>
-    
 
-<div id="loading">
-    <div class="loader"></div>
-    <p>در حال بارگذاری...</p>
-</div>
-<header>
-    <div>
-        <h1><span class="title1">A.R.Z toy</span><span class="title2">shop</span></h1>
+
+    <div id="loading">
+        <div class="loader"></div>
+        <p>در حال بارگذاری...</p>
     </div>
-    <div><input type="text" placeholder="محصول مورد نظر را وارد کنید..." id="main-search-box"></div>
-    <nav>
-        <a href="../../index.html">خانه</a>
-        <a href="../../all/all products/">دسته‌بندی‌ها</a>
-        <a href="../../all/all products/">محصولات</a>
-        <a href="#footer">درباره ما</a>
-    </nav>
-
-</header>
-
-<main>
-    <p class="first-p-i-write">
-        <a href="../../index.html">خانه</a>
-        ←
-        <a href="../../all/all products/"> محصولات</a>
-        ←
-        <span class="product-name"></span>
-    </p>
-    <div class="main-div">
-        <div class="product-gallery">
-
-            <div class="div-under-div-img">
-                <img src="" alt="" class="img-under-main-div product-image" id="mainProductImage">
-            </div>
-
-            <div class="product-thumbnails" id="productThumbnails"></div>
-
-        </div>
+    <header>
         <div>
-            <h2 class="h2-under-div-under-div product-name"></h2>
-            <p class="p-brother-of-h2 product-short-description"></p>
-            <div class="price-box">
-                <p class="second-p-under-price-box product-price"></p>
-            </div>
-            <p class="mojoodi product-Inventory"></p>
-            <div class="buy-button-container">
-                <button onclick="myDialog.showModal()" class="button-for-buy">
-                    🛒 خرید محصول
-                </button>
-                <dialog id="myDialog">
-                    <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
+            <h1><span class="title1">A.R.Z</span><span class="title2"> toys</span></h1>
+        </div>
+        <div><input type="text" placeholder="محصول مورد نظر را وارد کنید..." id="main-search-box"></div>
+        <nav>
+            <button id="themeToggle" type="button" aria-label="تغییر تم">
+                🌙
+            </button>
+            <a href="../../index.html">خانه</a>
+            <a href="../../all/all products/">دسته‌بندی‌ها</a>
+            <a href="../../all/all products/">محصولات</a>
+            <a href="#footer">درباره ما</a>
+        </nav>
 
-                    <button onclick="myDialog.close()">
-                        بستن
+    </header>
+
+    <main>
+        <p class="first-p-i-write">
+            <a href="../../index.html">خانه</a>
+            ←
+            <a href="../../all/all products/"> محصولات</a>
+            ←
+            <span class="product-name"></span>
+        </p>
+        <div class="main-div">
+            <div class="product-gallery">
+
+                <div class="div-under-div-img">
+                    <img src="" alt="" class="img-under-main-div product-image" id="mainProductImage">
+                </div>
+
+                <div class="product-thumbnails" id="productThumbnails"></div>
+
+            </div>
+            <div>
+                <h2 class="h2-under-div-under-div product-name"></h2>
+                <p class="p-brother-of-h2 product-short-description"></p>
+                <div class="price-box">
+                    <p class="second-p-under-price-box product-price"></p>
+                </div>
+                <p class="mojoodi product-Inventory"></p>
+                <div class="buy-button-container">
+                    <button onclick="myDialog.showModal()" class="button-for-buy">
+                        🛒 خرید محصول
                     </button>
-                    <a href="tel:05133682848">تماس گرفتن</a>
-                </dialog>
-            </div>
-            <div class="i-need-grid-in-it product-features">
+                    <dialog id="myDialog">
+                        <p>برای خرید این محصول، لطفاً با ما تماس بگیرید.</p>
+
+                        <button onclick="myDialog.close()">
+                            بستن
+                        </button>
+                        <a href="tel:05133682848">تماس گرفتن</a>
+                    </dialog>
+                </div>
+                <div class="i-need-grid-in-it product-features">
+                </div>
             </div>
         </div>
+        <div class="main-div-in-main">
+            <h2 class="h2-under-main">توضیحات محصول</h2>
+            <p class="p-under-main product-description"></p>
+            <h3 class="h3-under-main">مشخصات محصول</h3>
+            <div class="div-div-main product-specs">
+            </div>
+        </div>
+        <section class="related" id="product">
+
+            <h2>
+                محصولات محبوب دیگر
+            </h2>
+
+
+            <div class="related-products"></div>
+
+        </section>
+    </main>
+    <div id="imageModal" class="image-modal">
+        <span class="image-modal-close">&times;</span>
+        <img id="modalProductImage" src="" alt="">
     </div>
-    <div class="main-div-in-main">
-        <h2 class="h2-under-main">توضیحات محصول</h2>
-        <p class="p-under-main product-description"></p>
-        <h3 class="h3-under-main">مشخصات محصول</h3>
-        <div class="div-div-main product-specs">
-        </div>
-    </div>
-    <section class="related" id="product">
-
-        <h2>
-            محصولات محبوب دیگر
-        </h2>
-
-
-        <div class="related-products"></div>
-
-    </section>
-</main>
-<div id="imageModal" class="image-modal">
-    <span class="image-modal-close">&times;</span>
-    <img id="modalProductImage" src="" alt="">
-</div>
-<footer class="footer" id="footer">
-    <div class="main-div-in-footer">
-        <div>
-            <h6 class="footer-head">🧸A.R.Z toyshop</h6>
-            <p>فروشگاه آنلاین اسباب‌بازی با مجموعه‌ای<br> از محصولات جذاب و سرگرم‌کننده برای کودکان.</p>
-        </div>
-        <div>
-            <h6 class="footer-head">دسترسی سریع</h6>
-            <div class="quick-access">
-                <a href="../../index.html">خانه</a>
-                <a href="../../all/all products/">محصولات</a>
-                <a href="../../all/all products/">دسته بندی ها</a>
+    <footer class="footer" id="footer">
+        <div class="main-div-in-footer">
+            <div>
+                <h6 class="footer-head">🧸A.R.Z toyshop</h6>
+                <p>فروشگاه آنلاین اسباب‌بازی با مجموعه‌ای<br> از محصولات جذاب و سرگرم‌کننده برای کودکان.</p>
+            </div>
+            <div>
+                <h6 class="footer-head">دسترسی سریع</h6>
+                <div class="quick-access">
+                    <a href="../../index.html">خانه</a>
+                    <a href="../../all/all products/">محصولات</a>
+                    <a href="../../all/all products/">دسته بندی ها</a>
+                </div>
+            </div>
+            <div>
+                <h6 class="footer-head">ارتباط با ما</h6>
+                <a href="tel:05133682848" style="text-decoration: none;color: #fff">تلفن: 05133682848</a>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/arz.toys?utm_source=qr&stkn=NWV2bDA0a3M2MG1j">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon1" width="30" height="30" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <circle cx="12" cy="12" r="4"></circle>
+                            <circle cx="17.5" cy="6.5" r="1"></circle>
+                        </svg>
+                    </a>
+                    <a href="https://t.me/joinchat/AAAAAD0H10K_He_VM_z60Q">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon2" width="30" height="30" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M21.9 4.2 18.8 19c-.2 1-1.1 1.3-1.9.8l-5.4-4-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.5 10-9c.4-.4-.1-.6-.6-.2L5.3 12.2.1 10.6c-1.1-.3-1.1-1.1.2-1.6L20.5 1.3c.9-.3 1.7.2 1.4 1.9z" />
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-        <div>
-            <h6 class="footer-head">ارتباط با ما</h6>
-            <a href="tel:05133682848" style="text-decoration: none;color: #fff">تلفن: 05133682848</a>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/arz.toys?utm_source=qr&stkn=NWV2bDA0a3M2MG1j">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon1" width="30" height="30" viewBox="0 0 24 24"
-                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                        stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                        <circle cx="12" cy="12" r="4"></circle>
-                        <circle cx="17.5" cy="6.5" r="1"></circle>
-                    </svg>
-                </a>
-                <a href="https://t.me/joinchat/AAAAAD0H10K_He_VM_z60Q">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon2" width="30" height="30" viewBox="0 0 24 24"
-                        fill="currentColor">
-                        <path
-                            d="M21.9 4.2 18.8 19c-.2 1-1.1 1.3-1.9.8l-5.4-4-2.6 2.5c-.3.3-.5.5-1 .5l.4-5.5 10-9c.4-.4-.1-.6-.6-.2L5.3 12.2.1 10.6c-1.1-.3-1.1-1.1.2-1.6L20.5 1.3c.9-.3 1.7.2 1.4 1.9z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div>
 
-</footer>
-<p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
-<script type="module" src="../../js/products-data.js"></script>
-<script type="module" src="../../js/related-products.js"></script>
-<script>
-const searchBox = document.getElementById("main-search-box");
+    </footer>
+    <p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
+    <script type="module" src="../../js/products-data.js"></script>
+    <script type="module" src="../../js/related-products.js"></script>
+    <script>
+        const searchBox = document.getElementById("main-search-box");
 
-searchBox.addEventListener("keydown", function (event) {
-    if (event.key === "Enter") {
-        const searchValue = searchBox.value.trim();
+        searchBox.addEventListener("keydown", function (event) {
+            if (event.key === "Enter") {
+                const searchValue = searchBox.value.trim();
 
-        if (searchValue !== "") {
-            window.location.href =
-                "../../all/all products/?search=" +
-                encodeURIComponent(searchValue);
-        }
-    }
-});
-</script>
-<script type="module" src="../../js/product-jsonld.js"></script>
-<script type="module" src="../../js/product-page2.js"></script>
+                if (searchValue !== "") {
+                    window.location.href =
+                        "../../all/all products/?search=" +
+                        encodeURIComponent(searchValue);
+                }
+            }
+        });
+    </script>
+    <script type="module" src="../../js/product-jsonld.js"></script>
+    <script type="module" src="../../js/product-page2.js"></script>
 
-<script>
-    window.addEventListener("load", () => {
-
-        setTimeout(() => {
-
-            const loading = document.getElementById("loading");
-
-            loading.classList.add("hide");
+    <script>
+        window.addEventListener("load", () => {
 
             setTimeout(() => {
-                loading.remove();
-            }, 800);
 
-        }, 1500);
+                const loading = document.getElementById("loading");
 
-    });
-</script>
+                loading.classList.add("hide");
+
+                setTimeout(() => {
+                    loading.remove();
+                }, 800);
+
+            }, 1500);
+
+        });
+    </script>
+    <script src="../../js/theme.js"></script>
 </body>
 
 </html>

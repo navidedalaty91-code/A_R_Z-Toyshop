@@ -112,6 +112,21 @@
             transform: scale(1.05);
         }
 
+        #themeToggle {
+            border: none;
+            background: transparent;
+            font-size: 22px;
+            cursor: pointer;
+            padding: 7px 9px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+        }
+
+        #themeToggle:hover {
+            background-color: #f1f5f9;
+            transform: scale(1.08);
+        }
+
         main {
             margin-top: 120px;
         }
@@ -350,6 +365,95 @@
             padding: 1rem 0;
             text-align: center;
             color: #fff;
+        }
+
+        body.dark-mode {
+            background-color: #0f172a;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode header {
+            background-color: #1e293b;
+            border-bottom-color: #334155;
+        }
+
+        body.dark-mode nav a {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode nav a:hover {
+            color: #60a5fa;
+        }
+
+        body.dark-mode .main-search-box {
+            background-color: #334155;
+            color: #f8fafc;
+        }
+
+        body.dark-mode .main-search-box::placeholder {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .main-search-box:hover {
+            background-color: #475569;
+        }
+
+        body.dark-mode .a-simple-paragraph {
+            background-color: #142843;
+        }
+
+        body.dark-mode .a-simple-paragraph div p {
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .a-simple-paragraph-1 h2,
+        body.dark-mode .Product h2 {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .Category {
+            background-color: #1e293b;
+            border-color: #334155;
+        }
+
+        body.dark-mode .Category a {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .div-under-product {
+            background-color: #1e293b;
+        }
+
+        body.dark-mode .information {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .p-under-product {
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .p-under-product-1 {
+            color: #60a5fa;
+        }
+
+        body.dark-mode #no-result {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode .price-and-button a {
+            background-color: #c09d12;
+        }
+
+        body.dark-mode .footer {
+            background-color: #414e7230;
+        }
+
+        body.dark-mode .end-p {
+            background-color: #414e7230;
+        }
+
+        body.dark-mode #themeToggle:hover {
+            background-color: #334155;
         }
 
         @media (hover: hover) and (pointer: fine) {
@@ -848,16 +952,20 @@
 <body>
     <header>
         <div>
-            <h1><span class="title1">A.R.Z toy</span><span class="title2">shop</span></h1>
+            <h1><span class="title1">A.R.Z</span><span class="title2"> toys</span></h1>
         </div>
         <div><input type="text" placeholder="محصول مورد نظر را وارد کنید..." class="main-search-box" id="searchInput">
         </div>
         <nav>
+            <button id="themeToggle" type="button" aria-label="تغییر تم">
+                🌙
+            </button>
             <a href="./index.html">خانه</a>
             <a href="./all/all products/index.html">دسته‌بندی‌ها</a>
             <a href="./all/all products/index.html">محصولات</a>
             <a href="#footer">درباره ما</a>
         </nav>
+
 
     </header>
     <main id="mainContent">
@@ -940,7 +1048,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=fse6rf45e4g8v454v5vd">
-                    <img src="./images/photo_2026-09-13_22-49-28.jpg" alt="کنسول بازی 500 بازی">
+                        <img src="./images/photo_2026-09-13_22-49-28.jpg" alt="کنسول بازی 500 بازی">
                     </a>
                     <p class="p-under-product product-name"></p>
                     <p class="information product-description"></p>
@@ -951,7 +1059,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=df8g74df5gd123dg6465">
-                    <img src="./images/Untitled-1.png" alt="ست بافت مو">
+                        <img src="./images/Untitled-1.png" alt="ست بافت مو">
                     </a>
                     <p class="p-under-product product-name1"></p>
                     <p class="information product-description1"></p>
@@ -962,7 +1070,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=fh8g7h5fh42gb2g4h545">
-                    <img src="./images/photo_2026-09-13_22-49-19.jpg" alt="ست ناخن و ارایشی">
+                        <img src="./images/photo_2026-09-13_22-49-19.jpg" alt="ست ناخن و ارایشی">
                     </a>
                     <p class="p-under-product product-name2"></p>
                     <p class="information product-description2"></p>
@@ -973,7 +1081,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=w2se8dyhwsdi8jwwdiu8">
-                    <img src="./images/photo_2026-09-13_22-49-25.jpg" alt="تفنگ ۲ کاره توپی و ابپاش">
+                        <img src="./images/photo_2026-09-13_22-49-25.jpg" alt="تفنگ ۲ کاره توپی و ابپاش">
                     </a>
                     <p class="p-under-product product-name4"></p>
                     <p class="information product-description4"></p>
@@ -984,7 +1092,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=mje8is3ur3883wiikdx3">
-                    <img src="./images/photo_2026-09-13_22-49-30.jpg" alt="دوربین عکاسی چاپدار">
+                        <img src="./images/photo_2026-09-13_22-49-30.jpg" alt="دوربین عکاسی چاپدار">
                     </a>
                     <p class="p-under-product product-name6"></p>
                     <p class="information product-description6"></p>
@@ -995,7 +1103,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=dpkpe3ed3k0edpwd33ed">
-                    <img src="./images/photo_2026-09-13_22-49-33.jpg" alt="بوکسینگ شارژی بلوتوث">
+                        <img src="./images/photo_2026-09-13_22-49-33.jpg" alt="بوکسینگ شارژی بلوتوث">
                     </a>
                     <p class="p-under-product product-name5"></p>
                     <p class="information product-description5"></p>
@@ -1006,7 +1114,7 @@
                 </div>
                 <div class="div-under-product">
                     <a href="./products/product/?id=fdvdxvcew9rwoj3ee02e">
-                    <img src="./images/photo_2026-09-13_22-49-35.jpg" alt="هواپیما کنترلی">
+                        <img src="./images/photo_2026-09-13_22-49-35.jpg" alt="هواپیما کنترلی">
                     </a>
                     <p class="p-under-product product-name7"></p>
                     <p class="information product-description7"></p>
@@ -1059,26 +1167,26 @@
     </footer>
     <p class="end-p">© تمامی حقوق برای A.R.Z toyshop محفوظ است.</p>
     <script>
-const searchInput = document.querySelector("#searchInput");
+        const searchInput = document.querySelector("#searchInput");
 
-searchInput.addEventListener("keydown", function (event) {
+        searchInput.addEventListener("keydown", function (event) {
 
-    if (event.key === "Enter") {
+            if (event.key === "Enter") {
 
-        const searchValue = searchInput.value.trim();
+                const searchValue = searchInput.value.trim();
 
-        if (searchValue !== "") {
+                if (searchValue !== "") {
 
-            window.location.href =
-                "./all/all products/?search=" +
-                encodeURIComponent(searchValue);
+                    window.location.href =
+                        "./all/all products/?search=" +
+                        encodeURIComponent(searchValue);
 
-        }
+                }
 
-    }
+            }
 
-});
-</script>
+        });
+    </script>
     <script type="module">
         import { products } from "./js/products-data.js";
 
@@ -1168,6 +1276,8 @@ searchInput.addEventListener("keydown", function (event) {
 
         document.querySelector(".product-description7").textContent = product7.description;
     </script>
+    <script src="./js/theme.js"></script>
+
 </body>
 
 </html>
