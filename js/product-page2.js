@@ -347,7 +347,7 @@ body {
             <div>
 
                 <h6 class="footer-head">
-                    🧸A.R.Z toyshop
+                    🧸A.R.Z toys
                 </h6>
 
                 <p>
@@ -466,7 +466,7 @@ body {
 
 
     <p class="end-p">
-        © تمامی حقوق برای A.R.Z toyshop محفوظ است.
+        © تمامی حقوق برای A.R.Z toys محفوظ است.
     </p>
 
     `;
