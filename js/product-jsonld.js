@@ -46,7 +46,7 @@ if (product) {
 
         "brand": {
             "@type": "Brand",
-            "name": "A.R.Z Toyshop"
+            "name": "A.R.Z Toys"
         },
 
         "offers": {
@@ -61,7 +61,7 @@ if (product) {
 
             "seller": {
                 "@type": "Organization",
-                "name": "A.R.Z Toyshop"
+                "name": "A.R.Z Toys"
             }
         }
     };
